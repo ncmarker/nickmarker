@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cat Adoption Form</title>
+	<style>
+		#header {
+			background-image: url('cats.jpeg');
+			background-position: bottom;
+			height: 300px;
+			border-top-right-radius: 30px;
+			border-top-left-radius: 30px;
+			border-bottom: 2px solid black;
+			margin: 0px 0px 30px 0px
+		}
+
+		h1 {
+			text-align: center;
+			line-height: 180px;
+			margin: 0px;
+			font-size: 40px;
+		}
+
+		body {
+			background-color: #ffe599;
+		}
+
+		#content {
+			width: 1020px;
+			margin: 20px auto;
+			padding: 0px 0px 30px 0px;
+			border-radius: 30px;
+			border: 4px solid black;
+			background-color: #ebecf0;
+		}
+
+		.form-row {
+			margin: 20px 0px 0px 25px;
+			font-size: 20px;
+		}
+
+		.text-box {
+			width: 96%;
+			height: 50px;
+			margin: 5px 0px 0px;
+		}
+
+		.form-options {
+			font-size: 15px;
+			margin: 5px 5px 0px 0px;
+		}
+
+		button {
+			padding: 10px 15px;
+			border-radius: 10px;
+			font-size: 12px;
+		}
+
+		#submit {
+			background-color: #ffe599;
+		}
+	</style>
+</head>
+
+<body>
+<div id="content">
+	<div id="header">
+		<h1>Cat Adoption Form</h1>
+	</div>
+
+	<form action="confirmation.html">
+		<div class="form-row">
+			<label for="first-name">First Name:</label>
+			<input id="first-name" type="text" placeholder="First Name" required/>
+		</div>
+
+		<div class="form-row">
+			<label for="last-name">Last Name:</label>
+			<input id="last-name" type="text" placeholder="Last Name" required/>
+		</div>
+
+		<div class="form-row">
+			<label for="email">Email:</label>
+			<input id="email" type="email" placeholder="example@example.com" required/>
+		</div>
+
+		<div class="form-row">
+			<label for="phone-number">Phone Number:</label>
+			<input id="phone-number" type="tel" placeholder="xxx-xxx-xxxx" required/>
+		</div>
+
+		<div class="form-row">
+			Preferred contact method:
+				<div class="form-options"><input id="email-contact" type="radio" value="email" name="contact-method"/><label for="email-contact">Email</label></div>
+				<div class="form-options"><input id="phone" type="radio" value="phone" name="contact-method"/><label for="phone">Phone</label></div>
+				<div class="form-options"><input id="either" type="radio" value="either" name="contact-method"/><label for="either">Either</label></div>
+		</div>
+
+		<div class="form-row">
+			<label for="type-of-pet">What are you looking for?</label>
+			<select id="type-of-pet">
+				<option value="Select">--Select One--</option>
+				<option value="Adopt">Adopt</option>
+				<option value="Foster">Foster</option>
+				<option value="Browsing">Just Browsing</option>
+			</select>
+		</div>
+
+		<div class="form-row">
+			What age would you like your cat to be?
+				<div class="form-options"><input id="Kitten" type="checkbox" value="kitten" name="Kitten"><label for="Kitten">Kitten</label></div>
+				<div class="form-options"><input id="Young" type="checkbox" value="young" name="Young"><label for="Young">Young</label></div>
+				<div class="form-options"><input id="Middle-Aged" type="checkbox" value="middle-aged" name="Middle-Aged"><label for="Middle-Aged">Middle-Aged</label></div>
+				<div class="form-options"><input id="Older" type="checkbox" value="older" name="Older"><label for="Older">Older</label></div>
+				<div class="form-options"><input id="Elderly" type="checkbox" value="elderly" name="Elderly"><label for="Elderly">Elderly</label></div>
+		</div>
+
+		<div class="form-row">
+			<label for="why-adopt">Why do you want to adopt a cat?:</label><br/>
+			<textarea id="why-adopt" class="text-box" placeholder="Type response here..." required></textarea>
+		</div>
+
+		<div class="form-row">
+			<label for="comments">Additional Comments:</label><br/>
+			<textarea id="comments" class="text-box" placeholder="Type response here..."></textarea>
+		</div>
+
+		<div class="form-row">
+			<div class="form-options"><input id="accept" type="checkbox" value="accept" name="accept" required><label for="accept">I accept the terms and conditions</label></div>
+		</div>
+
+		<div class="form-row">
+			<button id="submit" type="submit">Submit</button>
+			<button type="reset">Reset</button>
+		</div>
+
+</form>
+
+
+</div>
+</body>
+</html>

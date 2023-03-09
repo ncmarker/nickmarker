@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<style>
+		#header {
+			width: 950px;
+			height: 200px;
+			line-height: 100px;
+			border: 3px solid white;
+			border-bottom: 0px;
+			text-align: center;
+			background-color: #ffd966;
+			margin: 0px auto;
+			font-size: 40px;
+			color: white;
+			text-shadow: 0px 0px 3px black;
+		}
+
+		body {
+		margin: 50px 0px;
+		background-image: url('img/background.jpg');
+		background-size: cover;
+		}
+
+		#content {
+		width: 950px;
+		margin: 0px auto 20px;
+		padding: 0px 0px 15px;
+		background-color: #e5c35b;
+		border: 3px solid white;
+		}
+
+
+		.landscape {
+			width: auto;
+			height: 100%;
+		}
+
+		.thumbnail {
+		width: 275px; 
+		height: 375px;
+		margin: 18px;
+		border: 2px solid #000;
+		overflow: hidden;
+		border-radius: 10%;	
+		opacity: .5;
+		display: inline-block;	
+		
+		}
+
+		div p {
+			text-align: center;
+			margin: 0;
+			color: white;
+			text-shadow: 0px 0px 2px black;
+			font-size: 23px;
+		}
+
+
+	.thumbnail-wrapper {
+		float: left;
+		text-align: center;
+		margin: 0px 0px 15px;
+	}
+
+	.thumbnail-wrapper p {
+		visibility: hidden;
+	}
+
+	.thumbnail-wrapper:hover p {
+		visibility: visible;
+	}
+
+	.thumbnail:hover {
+		opacity: 1;
+	}
+
+	.clearfloat {
+		clear: both;
+	}
+
+
+	</style>
+</head>
+
+<body>
+
+	<div id="header">
+		<h1>Mango the Cat</h1>
+	</div>
+
+	<div id="content">
+
+		<div class="thumbnail-wrapper">
+			<div class="thumbnail">
+				<img class="landscape" src="img/mango1.jpg" alt="Mango looking at the camera">
+			</div>
+			<p><em>Mango looking at the camera</em></p>
+		</div>
+
+		<div class="thumbnail-wrapper">
+			<div class="thumbnail">
+				<img class="landscape" src="img/mango2.jpg" alt="Mango looking up">
+			</div>
+			<p><em>Mango looking up</em></p>
+		</div>
+
+		<div class="thumbnail-wrapper">
+			<div class="thumbnail">
+				<img class="landscape" src="img/mango3.jpg" alt="Mango squinting">
+			</div>
+			<p><em>Mango squinting</em></p>
+		</div>
+
+
+		<div class="thumbnail-wrapper">
+			<div class="thumbnail">
+				<img class="landscape" src="img/mango4.jpg" alt="Mango drinking">
+			</div>
+			<p><em>Mango drinking</em></p>
+		</div>
+
+		<div class="thumbnail-wrapper">
+			<div class="thumbnail">
+				<img class="landscape" src="img/mango5.jpg" alt="Mango laying">
+			</div>
+			<p><em>Mango laying</em></p>
+		</div>
+
+		<div class="thumbnail-wrapper">
+			<div class="thumbnail">
+				<img class="landscape" src="img/mango6.jpg" alt="Mango scratching">
+				<div class="clear-float"></div>
+			</div>
+			<p><em>Mango scratching</em></p>
+		</div>
+
+
+
+
+
+		<div class="clearfloat"></div>
+
+	</div>
+
+
+
+</body>
+</html>

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>April Calendar</title>
+
+	<style>
+		#header {
+		background-image: url('img/april.jpg');
+		height: 350px;
+		background-size: cover;
+		background-position: bottom;
+		color: #FFF;
+		font-size: 45px;
+		text-align: center;
+		line-height: 250px;
+		text-shadow: 5px 5px 10px #000;
+		border-top-left-radius: 60px;
+		border-top-right-radius: 60px;
+		}
+
+		h1 {
+			margin: 0px;
+		}
+
+		body {
+			margin: 0px;
+			background-color: #f5eefc;
+		}
+
+		#content {
+			width: 1015px;
+			margin: 25px auto;
+			border-radius: 30px;
+		}
+
+		table {
+			text-align: right;
+			border-collapse: collapse;
+			background-color: white;
+		}
+
+		th {
+			width: 145px;
+			height: 30px;
+			border: 2px solid black;
+			text-align: center;
+		}
+
+		td {
+			width: 145px;
+			height: 145px;
+			border: 2px solid black;
+			vertical-align: text-top;
+		}
+
+		.not-april {
+			background-color: #cfcfcf;
+			color: #646464;
+		}
+
+		#birthday {
+			background-image: url('img/birthday.jpg');
+			background-size: cover;
+			color: #8922ea;
+		}
+
+		#april-fools {
+			background-image: url('img/aprilfools.jpg');
+			background-size: cover;
+			color: #8922ea;
+		}
+
+		#easter {
+			background-image: url('img/easter.jpg');
+			background-size: cover;
+			color: #8922ea;
+		}
+
+		.holiday {
+			width: 90px;
+			background-color: #dac9ea;
+			font-size: 20px;
+			text-align: center;
+			border-radius: 8px;
+			padding: 8px 12px;
+			margin: 20px auto;
+			color: #8922ea;
+		}
+
+
+	</style>
+</head>
+<body>
+	<div id="content">
+		
+		<div id="header">
+		<h1>April 2023</h1>
+		</div>
+
+		<table>
+			<tr>
+				<th>Sunday</th>
+				<th>Monday</th>
+				<th>Tuesday</th>
+				<th>Wednesday</th>
+				<th>Thursday</th>
+				<th>Friday</th>
+				<th>Saturday</th>
+			</tr>
+
+			<tr>
+				<td class="not-april">26</td>
+				<td class="not-april">27</td>
+				<td class="not-april">28</td>
+				<td class="not-april">29</td>
+				<td class="not-april">30</td>
+				<td class="not-april">31</td>
+				<td id="april-fools">1<p class="holiday">April Fools</p></td>
+			</tr>
+
+			<tr>
+				<td>2</td>
+				<td id="birthday">3<p class="holiday">Nick's Birthday</p></td>
+				<td>4</td>
+				<td>5</td>
+				<td>6</td>
+				<td>7</td>
+				<td>8</td>
+			</tr>
+
+			<tr>
+				<td id="easter">9<p class="holiday">Easter Sunday</p></td>
+				<td>10</td>
+				<td>11</td>
+				<td>12</td>
+				<td>13</td>
+				<td>14</td>
+				<td>15</td>
+			</tr>
+
+			<tr>
+				<td>16</td>
+				<td>17</td>
+				<td>18</td>
+				<td>19</td>
+				<td>20</td>
+				<td>21</td>
+				<td>22</td>
+			</tr>
+
+			<tr>
+				<td>23</td>
+				<td>24</td>
+				<td>25</td>
+				<td>26</td>
+				<td>27</td>
+				<td>28</td>
+				<td>29</td>
+			</tr>
+
+			<tr>
+				<td>30</td>
+				<td class="not-april">1</td>
+				<td class="not-april">2</td>
+				<td class="not-april">3</td>
+				<td class="not-april">4</td>
+				<td class="not-april">5</td>
+				<td class="not-april">6</td>
+			</tr>
+
+
+		</table>
+
+
+	</div>
+
+	</body>
+</html>

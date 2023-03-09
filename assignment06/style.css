@@ -1,0 +1,117 @@
+		
+		@font-face {
+			font-family: southpark;
+			src: url("fonts/southpark.ttf");
+		}	
+
+		body {
+			background-color: darkred;
+			margin: 0px;
+		}
+
+		h1 {
+			font-family: southpark, sans-serif;
+			font-size: 65px;
+			color: white;
+			text-shadow: 2px 2px 3px black;
+			text-align: center;
+			line-height: 225px;
+		}
+
+		h2 {
+			font-family: 'Bebas Neue', cursive;
+		}
+
+		#container {
+			width: 950px;
+			margin: 0 auto;
+		}
+
+		#header {
+			background-image: url("southpark.jpg");
+			height: 500px;
+			background-size: cover;
+			background-position: center;
+		}
+
+		.content {
+			width: 664px;
+			margin: 0px auto;
+			background-color: white;
+			padding: 25px;
+		}
+
+		.footer {
+			height: 50px;
+			background-color: grey;
+			color: white;
+			text-align: center;
+			background-size: cover;
+			line-height: 50px;
+			margin: 0px;
+		}
+
+
+		.nomargin {
+			margin: 0px;
+		}
+
+		#nav {
+			width: 425px;
+			margin: 0 auto;
+			font-size: 0px;
+		}
+
+		#nav a {
+			font-family: 'Bebas Neue', cursive;
+			color: white;
+			text-decoration: none;
+			font-size: 20px;
+			display: block;
+		}
+
+		#nav ul {
+			list-style: none;
+			padding: 0px;
+			margin: 0px;
+		}
+
+		#nav li {
+			width: 212px;
+			float: left;
+			text-align: center;
+			line-height: 50px;
+			background-color: #666666;
+			position: relative;
+			z-index: 1;
+		}
+
+		#navbar {
+			background-color: #666666;
+			width: 950px;
+			text-align: center;
+		}
+
+		#nav a:hover {
+			background-color: #1ab1ae;
+			color: white;
+		}
+
+		#nav a.active {
+			background-color: #afe4e3;
+			color: black;
+		}
+
+		#nav ul ul {
+			visibility: hidden;
+			position: absolute;
+		}
+
+		#nav li:hover > ul {
+			visibility: visible;
+		}
+
+		.clearfloat {
+			clear: both;
+		}
+		

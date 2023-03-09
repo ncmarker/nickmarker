@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>lab 10: Animation</title>
+
+	<style>
+		@font-face {
+		font-family: supermario;
+		src: url("fonts/SuperMario256.ttf");
+		}
+		
+		body {
+			background-color: black;
+		}
+
+		#content {
+			background-image: url('img/mariobackground.gif');
+			background-position: bottom;
+			background-repeat: no-repeat;
+			background-size: cover;
+			height: 800px;
+			width: 100%;
+		}
+
+		#mario {
+			padding: 545px 0px 0px;
+			position: relative;
+			animation: movemario 9s infinite linear;
+		}
+
+		#mario img {
+			height: 150px;
+			width: auto;
+		}
+
+
+		@keyframes movemario {
+			0% {-webkit-transform: translate(1400px);}
+			25% {-webkit-transform: translate(950px);}
+			47% {-webkit-transform: translate(505px);}
+			50% {-webkit-transform: translate(455px,-60px);}
+			60% {-webkit-transform: translate(405px);}
+			75% {-webkit-transform: translate(50px);}
+			100% {-webkit-transform: translate(-400px);}
+		}
+
+		.bubble {
+			background-color: white;
+			border: 3px solid black;
+			border-radius: 20px;
+			position: absolute;
+		}
+
+		#message {
+			text-align: center;
+			padding: 5px 10px;
+			bottom: 180px;
+			left: 150px;
+		}
+
+		#bubble1 {
+			height: 30px;
+			width: 30px;
+			bottom: 155px;
+			left: 118px;
+		}
+
+		#bubble2 {
+			height: 15px;
+			width: 15px;
+			bottom: 140px;
+			left: 100px;
+		}
+
+		#header {
+			float: left;
+			margin: 105px 0px 0px 420px;
+		}
+
+		h1 {
+			margin: 0px;
+			padding: 0px;
+			font-family: supermario, Arial, sans-serif;
+			font-size: 65px;
+			text-shadow: 0px 0px 4px grey;
+			-webkit-text-stroke: 2px white;
+		}
+
+		.clear {
+			clear: both;
+		}
+
+		p {
+			font-family: supermario, arial, sans-serif;
+			-webkit-text-stroke: 1px white;
+			color: #5a5a5a;
+		}
+
+
+	</style>
+</head>
+<body>
+	<div id="content">
+		<div id="header"><h1>Run Mario, Run!</h1><div class="clear"></div></div>
+		<div id="mario">
+			<img src="img/mariowalking.gif" alt="mario walking">
+			<div class="bubble" id="message"><p>Run! Hurry! <br>The clouds are coming!</p></div>
+			<div class="bubble" id="bubble1"></div>
+			<div class="bubble" id="bubble2"></div>
+		</div>
+	</div>
+
+	
+
+
+</body>
+</html>

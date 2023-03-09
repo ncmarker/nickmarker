@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!--RESPONSIVE COPY AND PASTE-->
+	<meta charset="UTF-8">
+	<meta name="description" content="Innovative student designer with a vision to create the next immersive interface at the intersection of contemporary technology and digital marketing.">
+  	<meta name="keywords" content="Nick Marker, Design, UI/UX, USC">
+  	<meta name="author" content="Nick Marker">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Nick Marker Design</title>
+
+	<!--GOOGLE FONTS-->
+	<link rel="preconnect" href="https://fonts.googleapis.com"> 
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+	<link href="https://fonts.googleapis.com/css2?family=Fira+Mono&display=swap" rel="stylesheet">
+
+	<!--CSS STYLESHEET-->
+	<link rel="stylesheet" href="style.css">
+
+	<!--RESPONSIVE NAVBAR LINK-->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+<style>
+
+	.header h6 {
+		visibility: hidden;
+	}
+
+	.header h2 {
+		visibility: hidden;
+	}
+
+	.doodleanimation {
+		visibility: hidden;
+	}
+
+	.header h1 {
+		animation: none;
+	}
+
+	#resbutton {
+		background-color: #9535d0;
+		color: white;
+		padding: 2px 5px;
+		margin: 25px auto;
+		text-align: center;
+		width: 200px; 							/*358?*/
+		height: 45px;
+		border-radius: 40px;
+		border: 2px solid #9535d0;
+		position: relative;
+	}
+
+	#resbutton p, #resbuttonlink {
+		font-family: inter-medium, arial, sans-serif;
+		line-height: 45px;
+		font-size: 20px;
+		text-decoration: none;
+		margin: 0px auto;
+		margin-left: -25px;
+	}
+
+	#resbutton:hover {
+		background-color: #fff;
+		color: #9535d0;
+	}
+
+	#resbutton img {
+		width: 22px ;
+		height: auto;
+		position: absolute;
+		left: 150px;
+		top: 12px;
+	}
+
+	#resume {
+		width: 80%;
+		height: auto;
+		margin: 70px auto;
+		text-align: center;
+		border: 1px solid #252525;
+	}
+
+	#resume img {
+		width: 100%;
+	}
+
+	/*RESUME WIDTH 90% FOR MOBILE DEVICES*/
+	@media (max-width: 767px){
+		#resume {
+			width: 90%;
+		}
+	}
+
+</style>
+
+<script   src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+
+<!--jQUERY CODE FOR DOWNLOAD BUTTON START-->
+<script>
+	$(document).ready(function() {
+		//alert('Hello World')
+
+		$("#resbutton").hover(function(){  
+		 	$('#dload').attr('src','img/resume/downloadicon_purple.png');  
+		 	}, function(){  
+			$('#dload').attr('src','img/resume/downloadicon_white.png');  
+		});  
+	});
+</script>
+<!--jQUERY CODE FOR DOWNLOAD BUTTON END-->
+
+</head>
+<body>
+
+<!--RESPONSIVE NAVBAR-->
+	<div class="ressec">
+		<div class="menu">
+		  <span></span>
+		</div>
+		
+		<nav class="navbar-menu">
+		  <ul class="menu-listing">
+		    <li><a href="projects.html">Projects</a></li>
+		    <li><a href="about.html">About</a></li>
+		    <li><a href="resume.html">Resume</a></li>
+		  </ul>
+		</nav>
+
+		<div class="reslogo">
+			<img src="img/NMDesignLogo.png" alt="NMDesign Logo">
+		</div>
+	</div>
+<!--RESPONSIVE NAVBAR END-->
+
+	<div class="nav-wrapper">
+		<div class="nav">
+			<img src="img/NMDesignLogo.png" alt="NMDesign Logo">
+			<a href="projects.html">Projects</a>
+			<a href="about.html">About</a>
+			<a class="active" href="resume.html">Resume</a>
+		</div>
+	</div>
+
+	<div class="header">
+		<h6>Hello my name is</h6>
+		<br>
+		<h1>Resume</h1>
+		<br>
+		<h2>Innovative student <strong>designer</strong> with a vision to create the next immersive interface at the intersection of contemporary technology and digital marketing.</h2>
+		<br>
+		<div class="doodleanimation"><img src="img/DoodleAnimationTrimmed.gif" alt="Doodle Animation"></div>
+		<br>
+		<div class="scrollanimation"><img src="img/ScrollDown.gif" alt="Scroll Down"></div>
+	</div>
+
+	<hr>
+
+	<a id="resbuttonlink" href="img/resume/Marker_Nick_Resume.pdf" target="_blank">
+		<div id="resbutton"><p>Download</p><img id="dload" src="img/resume/downloadicon_white.png" alt="Download Icon"></div>
+	</a>
+
+	<div id="resume"><img src="img/resume/Marker_Nick_Resume_Website.png" alt="Nick Marker Resume"></div>
+
+<!--START OF FOOTER-->
+	<div class="footeranimation">
+		<div class="figure" id="f1"><img src="img/walkingman.gif" alt="Walking Stick Man"></div>
+		<div class="bubble"><p>Thanks for visiting!</p></div>
+	</div>
+
+	<div class="footer">
+		<p><a class="navfoot" href="projects.html">PROJECTS</a> | <a class="navfoot" href="about.html">ABOUT</a> | <a class="navfoot" href="resume.htmml">RESUME</a></p>
+		<a href="tel:484-365-3437"><img class="icon" src="img/Phone.png" alt="Call Me"></a>
+		<a href="mailto:ncmarker@usc.edu"><img class="icon" src="img/Mail.png" alt="Email Me"></a>
+		<a href="https://www.linkedin.com/in/nickmarker" target="_blank"><img class="icon" src="img/Linkedin.png" alt="Linkedin Profile"></a>
+		<br>
+		<img id="logo" src="img/NMDesignLogo.png" alt="Nick Marker Design Logo">
+		<p id="copyright">Designed and Developed by Nick Marker &copy 2022</p>
+	</div>
+<!--END OF FOOTER-->
+
+
+	<script>
+		
+	$(".menu").click(function() {
+		$(".menu").toggleClass("active");
+		$(".navbar-menu").toggleClass("active");
+
+	});
+
+	</script>
+
+</body>
+</html>
