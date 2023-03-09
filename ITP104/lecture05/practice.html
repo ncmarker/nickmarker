@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Practice Exercise</title>
+
+<style>
+	body {
+		margin: 0px;
+		background-color:#fff;
+	}
+
+	#wrapper {
+		width: 1000px;
+		padding: 20px;
+		margin: 0 auto;
+		background-color: wheat;
+	}
+
+	#row1 {
+		height: 150px;
+		background-color: lightblue;
+	}
+
+	#row2 {
+		margin: 5px 0px;
+	}
+
+	#row3 {
+		margin: 5px 0px;
+	}
+
+	.column-left {
+		float: left;
+		width: 480px;
+		height: 480px;
+	}
+
+	.column-right {
+		float: right;
+		width: 480px;
+		height: 480px;
+	}
+
+	#thistle {
+		background-color: thistle;
+	}
+
+	#lightgrey {
+		background-color: lightgrey;
+	}
+
+	#lightgreen {
+		background-color: lightgreen;
+	}
+
+	#lightpink {
+		background-color: lightpink;
+	}
+
+	.clearfloat {
+		clear: both;
+	}
+
+
+
+</style>
+</head>
+<body>
+
+<div id="wrapper">
+	<div id="row1">
+	</div><!-- closes row1 -->
+
+
+	<div id="row2">
+		<div class="column-left" id="thistle"></div>
+		<div class="column-right" id="lightgrey"></div>
+		<div class="clearfloat"></div>
+	</div><!-- closes row2 -->
+
+
+	<div id="row3">
+		<div class="column-left" id="lightgreen"></div>
+		<div class="column-right" id="lightpink"></div>
+		<div class="clearfloat"></div>
+	</div><!-- closes row3 -->
+
+
+</div><!-- closes wrapper -->
+
+</body>
+</html>

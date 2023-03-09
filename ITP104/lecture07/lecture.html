@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Fonts, Position Property</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Raleway+Dots&display=swap" rel="stylesheet">
+
+<style>
+	/* Add font-face for Black Rose */
+	/* https://www.dafont.com/black-rose.font */
+	@font-face {
+		font-family: halloween;
+		src: url("fonts/halloween.ttf");
+	}
+
+	@font-face {
+		font-family: "Spooky Bones";
+		src: url("fonts/SPOOKYBONES.ttf");
+	}
+		
+	/* Add body font-family, Arial and sans-serif */
+		body {
+			line-height:2;
+			font-family: Arial, sans-serif;
+		}
+
+	/* Set a font-family, first Starbucks then Impact, serif for h1 */
+	/* Add font-weight and font-size of 35px */
+	/* Then change to Black Rose once defined */
+	h1 {
+		font-size: 55px;
+		font-family: 'Raleway Dots', cursive;
+		color: red;
+	}
+	
+
+	/* Set a font-family of Comic Sans MS for h2 */
+	/* Using Google Fonts get link for Abril Fatface */
+	/* Change to use Abril Fatface */
+	h2 {
+		font-family: 'Orbitron', sans-serif;
+	}
+	
+		.clearfloat {
+			clear: both;
+		}
+		
+		
+		#main, #nav {
+			width: 720px;
+			margin: auto;
+		}
+		.thumbnail {
+			background-color: #CCC;
+			margin: 10px;
+			width: 220px;
+			height: 220px;
+			float: left;
+			overflow: hidden;		
+			/* add relative position */
+			position: relative;
+		}
+		
+		/* Style the overlay using absolute and adjusting top,left,right,bottom */
+		.overlay {
+			background-color: rgba(0,0,0,.3);
+			color: white;
+			position: absolute;
+			top: 0px;
+			bottom: 0px;
+			left: 0px;
+			right: 0px;
+			text-align: center;
+			line-height: 190px;
+			visibility: hidden;
+		}
+
+		/* Add the overlay hover effect */
+		.thumbnail:hover .overlay {
+			visibility: visible;
+		}
+		
+		.thumbnail > img {
+			width: auto;
+			height: 100%;
+		}
+		.thumbnail > .width-100 {
+			width: 100%;
+			height: auto;
+		}
+		
+		/* Style the #navbar, make fixed, set top left and right to 0 */
+		/* Add z-index */
+		#navbar {
+			background-color: #900;
+			position: fixed;
+			top: 0px;
+			left: 0px;
+			right: 0px;
+		}
+
+		/* Style #nav ul, removing bullets and no margins or paddings */
+		#nav ul {
+			list-style: none;
+			padding: 0px;
+			margin: 0px;
+		}
+		
+		/* Style #nav li, make relative, float left and set width and line height and center */
+		/* Calculate width 720px / 4 = 180px */
+		/* Add background color, same as #navbar */
+		#nav li {
+			width: 180px;
+			float: left;
+			text-align: center;
+			line-height: 50px;
+			background-color: #900;
+			position: relative;
+		}
+
+		/* Add #nav li:hover background color of #fc0 */
+		#nav li:hover {
+			background-color: #fc0;
+		}
+
+		/* Fix the #nav a tag making block instead of inline, remove underline and make white */
+		#nav a {
+			display: block;
+			text-decoration: none;
+			color: white;
+		}
+
+		/* Style #nav ul ul using visibility and absolute */
+		/* Adjust the top based on line-height set in #nav li */
+		#nav ul ul {
+			visibility: hidden;
+			position: absolute;
+		}
+
+		/* Show #nav li:hover > ul */
+		#nav li:hover > ul {
+			visibility: visible;
+		}
+		
+		
+		/* Set left and top for #nav ul ul ul */
+		#nav ul ul ul {
+			top: 0px;
+			left: 180px;
+		}
+
+		
+	</style>
+
+</head>
+<body>
+
+	<div id="navbar">
+
+		<div id="nav">
+
+			<ul>
+				<li><a href="">Menu 1</a></li>
+				<li>
+					<a href="">Menu 2</a>
+					<ul>
+						<li><a href="">Sub-menu 1</a></li>
+						<li><a href="">Sub-menu 2</a>
+							<ul>
+								<li><a href="">Sub-sub-menu 1</a></li>
+								<li><a href="">Sub-sub-menu 2</a></li>
+								<li><a href="">Sub-sub-menu 3</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li><a href="">Menu 3</a></li>
+				<li><a href="">Menu 4</a></li>
+			</ul>
+
+			<div class="clearfloat"></div>
+
+		</div> <!-- #nav -->
+
+	</div> <!-- #navbar -->
+
+<div id="main">
+
+<h1>Fonts, Position Property</h1>
+
+<h2>Ipsum Content</h2>
+
+<p>Chakra is a set of deployment-ready files. Wide Web browser automation library to represent the Module Pattern. CouchDB is a methodology and 2D or other domains. Closure Compiler is a prototypical instance, which an application framework to help run multiple parameters into JavaScript is an API for dynamic web applications. VueJS is a community-driven attempt at explaining the script accordingly. Promise is a child function. locally in the user-interface logic is a way for example, a popular browsers without having to ensure that encapsulates how a tool making an architectural facade. Factory Pattern is a tool making the problem of arguments of JavaScript dispatches requests for its dependents, called the Document Object Model DOM is a function that interprets JavaScript source code with Universal is to various websites employ it has some kind of its code can run locally in other domains. Java.</p>
+
+<p>TypeScript is an application framework for native mobile applications. BEM is a realtime MVC Framework for the client and CSS, it happen. Falcor is a JavaScript primitive types. Components. JS, HTML and style of how to specify the popularity of its Edge browser used with its dependents, called observers, and feature-rich client-side library for developing server-side Web browser based on the NightwatchJS is prototype-based with the server. BEM is a task runner aiming at automating web development. JavaScript implementation in a lightweight 3D computer graphics within the concept. Interactive content, for a swiss army knife, focusing on improved data fetching.</p>
+
+<p>Flow is a familiar class-style OO framework, extensive Ajax programming language that allow the number of their value not Web-based, such as a realtime MVC Framework for dynamic nature, the server. Newer and 2D graphics within a task runner aiming at automating web applications. Model DOM manipulation. Although there are distinct languages and video. well documented, and interpreted programming using AMD. BEM is a pure JavaScript utilities designed to create is a Web browsers typically create and coherent APIs. documents, site-specific browsers, and Node. PostCSS is a commonly used with Node. Passport. CORS is a realtime MVC Framework for JavaScript plugins; plugins include any state changes, usually by analogy to ease development framework.</p>
+
+<h2>Images</h2>
+
+		<div id="thumbnails">
+
+			<div class="thumbnail">
+				<img src="img/img_1.jpg" alt="USC Village">
+				<div class="overlay">
+					<p>Village</p>
+				</div>
+			</div> <!-- .thumbnail -->
+
+			<div class="thumbnail">
+				<img src="img/img_2.jpg" alt="Tutor Campus Center">
+				<div class="overlay">
+					<p>Tutor Campus Center</p>
+				</div>
+			</div> <!-- .thumbnail -->
+
+			<div class="thumbnail">
+				<img src="img/img_3.jpg" alt="Tommy Trojan" class="width-100">
+				<div class="overlay">
+					<p>Tommy Trojan</p>
+				</div>
+			</div> <!-- .thumbnail -->
+
+			<div class="clearfloat"></div>
+
+</div>		
+
+<h2>Framework</h2>
+
+<p>Coffeescript is a simple, pluggable static type checker, designed for library/framework free JavaScript libraries developed and simple storage library. MongoDB, ExpressJS, AngularJS, and playing audio and update the browser without all methods and easy DOM is a structural framework for building user interfaces. </p>
+
+<h2>Javascript</h2>
+
+<p>JSPM is a JavaScript representation of Node. Compiler is an e-mail message to user actions that interprets JavaScript transformation toolkit to pages hosted on a creational design. Babel is a library developed and regular expressions, but to ECMAScript language.</p>
+
+<p>Observer Pattern is created by the host objects without the concept of V8 engine is a framework for rendering interactive cross platform web browser can run both in the Document Object Model Ramda is a JavaScript has an application more. </p>
+		
+<h2>Applications</h2>
+		
+<p>Modernizr is an action performed by all methods and flexible code can detect user interfaces with a high-level browser can respond to ECMAScript ES is a function. Test-Driven Development. HTTP request and optimizer. </p>
+		
+<p>LocalForage is an application is an action performed by analogy to the two are embedded in the type checker, designed for efficient data model. </p>
+
+</div> <!-- #main -->
+
+</body>
+</html>

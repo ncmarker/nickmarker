@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>JavaScript Plugins</title>
+	<!-- Add lightbox.css and flexslider.css below -->
+	<link rel="stylesheet" href="flexslider/flexslider.css" type="text/css">
+	<link href="lightbox/css/lightbox.css" rel="stylesheet"/>
+	<script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
+
+		
+	<style>
+		body {
+			margin: 0;
+			background-image:url(img/cheeseback.jpg);
+			background-repeat: repeat-x;
+			}
+		h1, h2 {
+			text-align: center;
+		}
+		.container, .flexslider-container, .thumbnail-container {
+			width: 80%;
+			margin:0 auto;
+		}
+		
+		/* flexslider demo */
+		/* fix heights .flex-control-thumbs */
+		.flex-control-thumbs {max-height:130px;}
+		.flexslider .slides img {height:750px;}
+
+
+		/* lightbox CSS */	
+		.thumbnail-container {text-align:center;}
+		.thumbnails {
+			margin:0 1%;
+			width:180px;
+			height:180px;
+			display:inline-block;
+			overflow:hidden;
+		}
+		.thumbnails img{
+			height:100%;
+			width:auto;
+		}
+		
+		/* parallax CSS */	
+		
+		
+		/* scroll out demo */
+		[data-scroll] {
+			opacity: 0;
+			transition: all 5s;
+		}
+		
+		[data-scroll="in"] {
+			opacity: 1;
+			transform: translateY(0px);
+		}
+		
+		[data-scroll="out"] {
+			opacity: 0;
+			transform: translateY(600px);
+		}
+		
+		.more {
+			display: flex;
+			justify-content: center;
+			overflow: show;
+		}
+
+		.flex-caption {
+			 width: 96%;
+			 padding: 2%;
+			 left: 0;
+			 bottom: 15px;
+			 background: rgba(0,0,0,.5);
+			 color: #fff;
+			 text-shadow: 0 -1px 0 rgba(0,0,0,.3);
+			 font-size: 14px;
+			 line-height: 18px;
+			 position: relative;
+		}
+
+		.parallax-window {
+			min-height: 400px;
+			background: transparent;
+		}
+	</style>
+	
+</head>
+<body>
+	<h1>JavaScript Plugins</h1>
+
+	
+	<div class="flexslider-container">
+		<h2>FlexSlider Example</h2>
+	<!-- Add Flexslider HTML below -->
+	<!-- Place somewhere in the <body> of your page -->
+		<div class="flexslider">
+		  <ul class="slides">
+		    <li data-thumb="img/image1.jpg">
+		      <img src="img/image1.jpg">
+		      <p class="flex-caption">Cheese image 1</p>
+		    </li>
+		    <li data-thumb="img/image2.jpg">
+		      <img src="img/image2.jpg">
+		      <p class="flex-caption">Cheese image 2</p>
+		    </li>
+		    <li data-thumb="img/image3.jpg">
+		      <img src="img/image3.jpg">
+		      <p class="flex-caption">Cheese image 3</p>
+		    </li>
+		    <li data-thumb="img/image4.jpg">
+		      <img src="img/image4.jpg">
+		      <p class="flex-caption">Cheese image 4</p>
+		    </li>
+		  </ul>
+		</div>
+	</div>
+
+
+	<div class="container">
+		<h2>ScrollOut Example</h2>
+		<p data-scroll>Mozzarella gouda mozzarella. Ricotta cow jarlsberg macaroni cheese hard cheese goat macaroni cheese melted cheese. Croque monsieur stinking bishop cheeseburger everyone loves rubber cheese boursin parmesan pecorino. Cream cheese fromage frais manchego boursin pepper jack squirty cheese.</p>
+
+		<p data-scroll>Swiss cheeseburger goat. Feta swiss cheesy feet queso blue castello say cheese boursin cheeseburger. Squirty cheese cheesecake cheese on toast babybel fondue mascarpone melted cheese mascarpone. Queso cow hard cheese cheeseburger cauliflower cheese danish fontina cottage cheese halloumi. St. agur blue cheese chalk and cheese red leicester manchego.</p>
+
+		<p data-scroll>Bocconcini stinking bishop jarlsberg. Squirty cheese everyone loves caerphilly croque monsieur boursin bavarian bergkase cow fromage. Lancashire ricotta emmental fromage frais cheese on toast cauliflower cheese airedale brie. Parmesan.</p>
+
+		<p data-scroll>Who moved my cheese cream cheese hard cheese. Lancashire halloumi stinking bishop chalk and cheese the big cheese fromage camembert de normandie taleggio. St. agur blue cheese danish fontina cow mascarpone cottage cheese who moved my cheese boursin parmesan. Cheese triangles st. agur blue cheese who moved my cheese edam fondue mozzarella red leicester emmental. Taleggio queso ricotta.</p>
+	</div> <!-- .container -->
+	<div class="parallax-window" data-parallax="scroll" data-image-src="img/cheesebanner.jpg"></div>
+	
+	<div class="thumbnail-container">
+		<h2>Lightbox Example</h2>
+		<div class="thumbnails">
+			<a href="img/image1.jpg" data-lightbox="cheese" data-title="My caption">
+			<img src="img/image1.jpg" title="Image Picture 1"></a>
+		</div><!-- #thumbnails -->
+		<div class="thumbnails">
+			<a href="img/image2.jpg" data-lightbox="cheese" data-title="My caption">
+			<img src="img/image2.jpg" title="Image Picture 2"></a>
+		</div><!-- #thumbnails -->
+		<div class="thumbnails">
+			<a href="img/image3.jpg" data-lightbox="cheese" data-title="My caption">
+			<img src="img/image3.jpg" title="Image Picture 3"></a>
+		</div><!-- #thumbnails -->
+		<div class="thumbnails">
+			<a href="img/image4.jpg" data-lightbox="cheese" data-title="My caption">
+			<img src="img/image4.jpg" title="Image Picture 4"></a>
+		</div> <!-- #thumbnails -->
+	</div> <!-- .thumbnail-container -->
+	
+	<div class="more">
+		<div class="wiv" data-wiv-speed="slow" data-wiv-height="15" data-wiv-tightness="6" data-wiv-thickness="6"
+		  data-wiv-color="#fffbe2a" data-wiv-fill="orange">
+		  Say Cheese!
+		</div>
+	</div><!-- ends more div -->
+	
+	<!-- Jquery CDN script tag ... establishes jQuery Library-->
+	<script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+	
+	<!-- Lightbox PLUS JS -->
+	<script src="lightbox/js/lightbox.js"></script>
+			
+	<!-- FlexSlider JS script tags-->
+	<!--only have one ajax so look at what version and use highest-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script src="flexslider/jquery.flexslider.js"></script>
+	
+	<!-- JQuery Code -->
+	<script>
+		// Can also be used with $(document).ready()
+		$(window).load(function() {
+ 			$('.flexslider').flexslider({
+   				animation: "slide",
+   				controlNav: "thumbnails"
+  			});
+
+ 			ScrollOut({
+  				threshold:.8
+			});
+
+ 			$('.parallax-window').parallax({imageSrc: 'img/cheesebanner.jpg'});
+
+			let w = wiv.wiv();
+			w.initWivs();
+
+		});
+
+	</script>
+			
+	<!-- Wiv and Parallax CDN JS -->
+	<script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
+	<script src="js/wiv.js"></script>
+
+</body>
+</html>

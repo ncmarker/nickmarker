@@ -1,0 +1,36 @@
+THE CONTENT/CODE:
+
+NAV 
+	Nav image (globe.png)
+
+HEADER SECTION (universe.png)
+
+	HEADER SECTION CONTENT
+	Brave New World (h1)
+
+FIRST SECTION
+
+	FIRST SECTION CONTENT
+	Section 1 image (worldmap.jpg)
+	In the novel “Brave New World,” Aldous Huxley describes a world where peace and stability are achieved only through building a system in which human beings all behave the same, organized by an all-powerful nanny state. (p)
+
+FOOTER
+	Get daily updates of world events(p) [link all text to http://www.google.com]
+
+------------------------------------------------------------------------------------------------------------------------------------
+
+THE CSS:
+
+BODY: set margins to 0
+
+NAV: set background color to black, height:48px, padding 15px top and bottom; set content within width of 1000px
+
+HEADER: height of 500px, text align center, for background image set position to center
+
+h1: set margin to 0, text color white, background color of red, add padding of 10px and override the display to inline-block, adjust top margins to match picture
+
+FIRST SECTION: add top and bottom padding of 10px; set content within width of 1000px; for the image float left and add padding right; for content, set font size of 31px, adjust width of p tag to float next to image
+
+FOOTER: background #3498db with text centered and white, add padding of 10px and set font size to 21px, make anchor text color white
+
+

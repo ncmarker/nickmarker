@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Introduction to JQuery</title>
+	<link rel="stylesheet" href="https://www.uscitpweb.com/itp104/css/lecture14.css">
+	<style>	
+		@font-face {
+		font-family:Tangerine;
+		src:url(Tangerine_Regular.ttf);
+		}
+
+		body {
+			margin: auto 0;
+			font-size: 12pt;
+			font-family:arial;
+			padding:0;
+			background:url(images/coffeebackground.jpg);
+			background-size:cover;
+		}
+
+		h1, h2 { font-family:'Tangerine',cursive;}
+
+	</style>
+	
+	<!-- Add jQuery script below -->
+	<script   src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+
+		
+
+	<script>
+	$(document).ready(function() {
+		// jQuery code here.
+		//alert('Hello World')
+
+		$('.content-container').css('background-color','#00000050');
+		$('h1').css('text-shadow','2px 2px #c6151c');
+
+		$('footer a').attr('href','http://www.usc.edu');
+		$('footer a').attr('target','_blank');
+
+		var h2text = $('h2').html();
+		//alert(h2text);
+
+		//$('p').html('<p>Hello World</p>');
+
+		$('.featured-coffee').click(function() {
+			$('.showimage').toggle(1000);
+		}
+			);
+
+		$('.click-me').click(function() {
+			$('.panel').toggle(1000);
+		}
+			);
+
+		$('h2').mouseover(function() {
+			$('p').html('<p>Drink tea instead!</p>');
+		}
+			);
+		
+	});
+	</script>
+</head>
+<body>
+<div id="container">
+	<div class="content-container">
+		<h1 class="coffeeheader">Coffee Ipsum</h1>
+		<h2><strong>Give your project a caffeine kick!</strong></h2>
+	
+		<div id="content-container-text">
+			<p>Affogato siphon, single shot that roast to go lungo. Bar , single shot ristretto single shot mug caffeine that cup espresso ut foam arabica. Steamed, cinnamon, kopi-luwak french press galão frappuccino, sweet, organic extra  café au lait est instant.</p>
+
+			<p>Doppio beans, flavour beans fair trade, cream, plunger pot, cultivar frappuccino trifecta as mazagran. Grounds saucer mocha, acerbic, café au lait id macchiato froth aromatic. Foam aged that robusta lungo strong cappuccino trifecta doppio coffee.</p>
+
+			<p>Cortado, dripper, caramelization espresso seasonal con panna barista organic. Eu decaffeinated french press, decaffeinated sugar variety milk cortado. Flavour kopi-luwak flavour medium, trifecta dark pumpkin spice mocha chicory robust milk.</p>
+
+			<p>Click to see the <span class="featured-coffee">featured coffee</span> for this month.</p>
+		</div><!-- content-container-text -->
+		
+		<div id="featured-coffee">
+			<img class="showimage" src="images/coffee.png">
+		</div><!-- featured-coffee -->
+
+		<p class="click-me"><a href="#">Caffeine Me!</a></p>
+		<div class="panel">
+			<p>Mazagran, affogato aromatic trifecta coffee espresso bar. A cappuccino et arabica steamed cup so crema. Aged caramelization, half and half espresso percolator white sit iced aged.</p>
+
+			<p>Sit café au lait grinder, macchiato blue mountain roast variety dripper. Bar , barista, and cup java cortado body est bar  sweet. Acerbic mug body galão mocha espresso robusta sugar siphon coffee.</p>
+		</div><!--panel -->
+
+	</div> <!-- container-content -->
+</div><!-- container -->
+	
+
+	<footer>
+			<p><a href="http://coffeeipsum.com/" target="_self">Get your dose today!</a></p>
+	</footer>
+
+	</body>
+	</html>

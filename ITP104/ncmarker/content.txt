@@ -1,0 +1,49 @@
+NAV (hbo.png)
+
+HEADER (house-of-dragons.jpg)
+
+	HEADER CONTENT
+	SUNDAYS AT 9PM(h5)
+	House of the Dragon(h1)
+	Fire will reign. Stream House of the Dragon, now., the prequel to Game of Thrones, now.(p)
+	WATCH THE TRAILER(p)
+
+SECTION ONE (HBO50.png)
+
+	FIRST SECTION CONTENT
+	HBO's 50th Anniversary(h3)
+	To mark the milestone, HBO will celebrate notable moments across the history of the brand and share sneak peeks from upcoming HBO Originals including House of the Dragon, The Last of Us, Barry, and the The White Lotus.(p)
+	VISIT HBO MAX(p)
+
+SECTION TWO
+
+	Mark Your Calendar(h2)
+
+	SECOND SECTION COLUMNS
+	avenue5.png (img)
+	PREMIERES OCT. 10(h4)
+	Avenue 5(p)(this is the title of show)
+	Set 40 years in the future when travelling the solar system is a booming business, the series follows life on board Avenue 5, a mash-up of a cruise liner and an interplanetary rocket ship packed with luxury amenities. (p)
+	FIND OUT MORE >(p) 
+
+	38garden.png (img)
+	PREMIERES OCT. 11(h4)
+	38 At The Garden(p)(this is the title of show)
+	38 At The Garden chronicles the extraordinary ascendance of point guard Jeemy Lin during his landmark 2012 season with th New York Nicks.(p)
+	FIND OUT MORE >(p) 
+
+	thevow.png (img)
+	PREMIERES OCT. 17(h4)
+	The Vow(p)(this is the title of show)
+	This documentary series follows members who joined the self-improvement group NXIVM.(p)
+	FIND OUT MORE >(p) 
+
+SECTION THREE
+
+	THIRD SECTION CONTENT
+	image (nuestras-voices-latin-heritage.jpg)
+	Celebrate Latin Heritage(h2)
+	Visit the Nuestras Voices page to celebrate stories of family, community, and love during Latin Heritage Month and throughout the year.(p) 
+
+FOOTER
+	© 2022 Home Box Office, Inc. All Rights Reserved.(p) 

@@ -1,0 +1,58 @@
+Question 1:
+<a href="http://www.usc.edu" target="_blank">USC</a>
+
+
+Question 2:
+<label for="email">Email:</label>
+<input id="email" type="email" placeholder="email@someplace.com" required/>
+
+
+Question 3:
+<h6>Steps to decorate a pumpkin</h6>
+<ol>
+	<li>Get pumpkin</li>
+	<li>Get carving tools</li>
+	<li>Draw face</li>
+	<li>Carve</li>
+	<li>Add light</li>
+</ol>
+
+
+Question 4:
+@media (max-width: 767px){
+	img {
+		visibility: hidden;
+	}
+}
+
+
+Question 5:
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+</body>
+</html>
+
+
+Question 6: 
+a:hover {
+	color: red;
+}
+
+
+Question 7:
+.overlay {
+	background-color: rgba(0,0,255,.5)
+}
+
+
+Question 8:
+@font-face {
+	font-family: Scarecrow;
+	src: url("fonts/scarecrow.woff");
+}
+

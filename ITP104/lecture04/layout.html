@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Page Layout</title>
+	<style>
+	#main {
+		background-color: pink;
+		width: 400px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	#wrapper {
+		width: 400px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	#left {
+		background-color: lightblue;
+		width: 178px;
+		float: left;
+		margin: 0px 5px;
+		padding: 0px 5px;
+		border: 1px solid black;
+	}
+	
+	#right {
+		background-color: lightgreen;
+		width: 178px;
+		float: left;
+		margin: 0px 5px;
+		padding: 0px 5px;
+		border: 1px solid black;
+	}
+	
+	.clearfloat {
+		clear: both;
+	}
+
+</style>
+</head>
+<body>
+
+	<div id="main">
+
+		<div id="wrapper">
+			<div id="left">
+				Left Column
+			</div> <!-- #left -->
+
+			<div id="right">
+				Right Column
+			</div> <!-- #right -->
+
+			<div class="clearfloat"></div>
+		</div> <!-- #wrapper -->
+
+		<div>Content Below Columns</div>
+		
+	</div> <!-- #main -->
+
+</body>
+</html>

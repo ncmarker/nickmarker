@@ -1,0 +1,74 @@
+body {
+	margin: auto 0;
+	font-size: 12pt;
+	font-family:arial;
+	padding:0;
+}
+
+
+h1 {margin:0;background:#102372;padding:10px 0px;color:#fff;font-size:4em;text-align:center;font-family: 'Baloo Chettan', cursive;}
+p {line-height:1.7;}
+.click-me {text-align:center;}
+
+/***************
+ *
+ * Sprite Example
+ *
+ ***************/
+
+div#drwho {
+	margin:10px auto;
+	width:50%;
+	text-align:center;
+	
+}
+
+/* style the div#drwho a */
+/* add border, inline-block, width and height */
+/* once sprite png created, add background image with no-repeat */
+/* then add transition CSS using linear */
+
+div#drwho a {
+	border: 1px solid black;
+	width: 190px;
+	height: 150px;
+	display: inline-block;
+	background-image: url('images/drwho-sprite.png');
+	background-repeat: no-repeat;
+	transition: all 1s linear;
+}
+
+/* style the #drwho1 thru 6 setting background positions */
+#drwho1 {background-position: 0px 0px;}
+#drwho1:hover {background-position: -190px 0px;}
+
+#drwho2 {background-position: 0px -150px;}
+#drwho2:hover {background-position: -190px -150px;}
+
+#drwho3 {background-position: 0px -300px;}
+#drwho3:hover {background-position: -190px -300px;}
+
+#drwho4 {background-position: 0px -450px;}
+#drwho4:hover {background-position: -190px -450px;}
+
+#drwho5 {background-position: 0px -600px;}
+#drwho5:hover {background-position: -190px -600px;}
+
+#drwho6 {background-position: 0px -750px;}
+#drwho6:hover {background-position: -190px -750px;}
+
+/* style the #drwho1 thru 6 setting background positions on hover state */
+
+
+footer {
+	background-color: #ff0000;
+	padding:10px;
+	text-align: center;
+	font-size: 2em;
+	font-weight:bold;
+	color: #fff;
+	padding-bottom:100%;
+	font-family: 'Baloo Chettan', cursive;
+}
+footer p {width:50%;margin:0 auto;}
+footer p a {color:#fff;text-decoration:none;}
