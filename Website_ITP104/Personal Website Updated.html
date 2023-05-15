@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="description" content="Innovative student designer with a vision to create the next immersive interface at the intersection of contemporary technology and digital marketing.">
+	  	<meta name="keywords" content="Nick Marker, Design, UI/UX, USC">
+	  	<meta name="author" content="Nick Marker">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!--GOOGLE FONTS-->
+		<link rel="preconnect" href="https://fonts.googleapis.com"> 
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+		<link href="https://fonts.googleapis.com/css2?family=Fira+Mono&display=swap" rel="stylesheet">
+
+		<!--CSS STYLESHEET-->
+		<link rel="stylesheet" href="style.css">
+
+		<!--JQUERY FOR RESPONSIVE NAVBAR-->
+		<script src="/path/to/cdn/jquery.slim.min.js"></script>
+
+		<title>Nick Marker Design</title>
+
+		<style>
+			body {
+				padding: 0px;
+				margin:  0px;
+			}
+
+			.nav {
+				height: 65px;
+				width:  100%;
+				font-family:  inter-medium, arial, sans-serif;
+				background-color:  #252525;
+			}
+
+			.nav-container{
+				max-width: 1000px;
+				text-align: right;
+				margin: 0 auto;
+				justify-content: center;
+				padding: 0px 25px;
+			}
+
+			.nav img {
+				vertical-align: middle;
+				display: inline-block;
+				float: left;
+				width: 200px;
+				margin: 10px 0px;
+				padding: 5px 0px;
+			}
+
+			.nav a {
+				display: inline-block;
+				margin: 10px 10px;
+				text-decoration: none;
+				border-radius: 15px;
+				color:  #FFF;
+				vertical-align: middle;
+				font-size: 18px;
+				padding: 2px 5px;
+			}
+
+			.active {
+				background-color: #9535d0;
+			}
+
+			.nav a:hover {
+				background-color: #431161;
+			}
+
+			.clear {
+				clear: both;
+			}
+
+			.responsive-navigation {
+				display: none;
+			}
+
+			.header{}
+
+			/*KEEP BELOW THIS*/
+			@media (max-width: 750px){
+				.responsive-navigation{
+					display: block;
+				}
+
+				.nav {
+					display: none;
+				}
+			}
+
+
+			/*RESPONSIVE NAVBAR*/
+			.res-nav {
+				background-color: #252525;
+				padding: 0px 15px;
+				height: 65px;
+				justify-content: center;
+			}
+
+			.res-nav img {
+				width: 200px;
+				margin-top: 13px;
+			}
+
+			.side-nav ul {
+				list-style: none;
+			}
+
+			.side-nav a {
+				text-decoration: none;
+				color: #FFF;
+				font-size: 22px;
+				font-family: inter-medium, arial, sans-serif;
+				padding: 5px 10px;
+				border-radius: 10px;
+			}
+
+			.side-nav a:hover {
+				background-color: #431161;
+			}
+
+			.side-nav li {
+				margin: 10px 0px;
+			}
+
+			.button {
+				background-color: #252525;
+				display: inline-block;
+				margin-top: 10px;
+				float: right;
+			}
+
+			.side-nav {
+			  background: #252525;
+			  position: fixed;
+			  top: 0;
+			  right: 0;
+			  width: 40%; /* 100% = fullscreen */
+			  height: 100vh;
+			  transition: transform 0.7s, opacity 1s;
+			  transform: translateX(100%);
+			  opacity: 0;
+			}
+
+			.side-nav.show {
+			  transform: translateX(0%);
+			  opacity: 1;
+			}
+
+			.list {
+			  display: flex;
+			  flex-direction: column;
+			  justify-content: center;
+			  align-items: center;
+			  height: inherit;
+			}
+
+
+			.hamburger {
+			  position: relative;
+			  margin-left: auto;
+			  width: 45px;
+			  height: 35px;
+			  z-index: 1;
+			}
+
+			.hamburger span {
+			  position: absolute;
+			  left: 0;
+			  background: #FFF;
+			  width: inherit;
+			  height: 5px;
+			  transition: transform 0.5s, opacity 0.5s;
+			}
+
+			.top-line {
+			  top: 0px;
+			}
+
+			.center-line {
+			  top: 15px;
+			}
+
+			.bottom-line {
+			  bottom: 0px;
+			}
+
+			.top-line.active {
+			  transform: translateY(15px) rotate(45deg);
+			}
+
+			.center-line.active {
+			  opacity: 0;
+			}
+
+			.bottom-line.active {
+			  transform: translateY(-15px) rotate(-45deg);
+			}
+
+
+
+		</style>
+	</head>
+	<body>
+		<!--NAVBAR-->
+		<div class="nav">
+			<div class="nav-container">
+				<img src="img/NMDesignLogo.png" alt="NMDesign Logo">
+				<a class="active" href="projects.html">Projects</a>
+				<a href="about.html">About</a>
+				<a href="resume.html">Resume</a>
+				<div class='clear'></div>
+			</div>
+		</div>
+		<!--NAVBAR END-->
+
+		<!--RESPONSIVE NAVBAR-->
+		<div class='responsive-navigation'>
+			<header class="res-nav">
+			  <img src="img/NMDesignLogo.png" alt="NMDesign Logo">
+			  <!-- Side Nav -->
+			  <div id="js-nav" class="side-nav">
+			    <ul class="list">
+			      <li><a class="active" href="projects.html">Projects</a></li>
+			      <li><a href="about.html">About</a></li>
+			      <li><a href="resume.html">Resume</a></li>
+			    </ul>
+			  </div>
+			  <!-- Hamburger Button -->
+			  <div id="js-hamburger" class="hamburger button">
+			    <span id="js-top-line" class="top-line"></span>
+			    <span id="js-center-line" class="center-line"></span>
+			    <span id="js-bottom-line" class="bottom-line"></span>
+			  </div>
+			  <div class='clear'></div>
+			</header>
+		</div>
+		<!--RESPONSIVE NAVBAR END-->
+
+
+	<script>
+		const hamburgerBtn = document.getElementById("js-hamburger");
+		const topLine = document.getElementById("js-top-line");
+		const centerLine = document.getElementById("js-center-line");
+		const bottomLine = document.getElementById("js-bottom-line");
+		const nav = document.getElementById("js-nav");
+
+		hamburgerBtn.addEventListener("click", () => {
+		  topLine.classList.toggle("active");
+		  centerLine.classList.toggle("active");
+		  bottomLine.classList.toggle("active");
+		  nav.classList.toggle("show");
+		});
+
+		$("#js-hamburger").click(function () {
+		$("#js-top-line").toggleClass("active");
+		$("#js-center-line").toggleClass("active");
+		$("#js-bottom-line").toggleClass("active");
+		$("#js-nav").toggleClass("show");
+		});
+
+	</script>
+
+	</body>
+</html>
