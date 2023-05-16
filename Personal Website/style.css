@@ -102,11 +102,11 @@ body {
 	/*--HEADER--*/
 	.header {
 		padding: 0px 15px;
+		height: 400px;
 	}
 
 	.words {
 		margin-top: 100px;
-		max-width: 200px;
 	}
 
 	.doodleanimation {
@@ -116,6 +116,7 @@ body {
 
 	.header h1 {
 		animation: writinganimation 1s linear 1 forwards;
+		font-size: 80px;
 	}
 
 	.header h2 {
