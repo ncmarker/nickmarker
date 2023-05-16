@@ -1,27 +1,27 @@
 /*-----FONTS-----*/
 @font-face {
 	font-family: "inter-bold";
-	src: url("../fonts/INTER-BOLD.ttf");
+	src: url("../../fonts/INTER-BOLD.ttf");
 }
 
 @font-face {
 	font-family: "inter-medium";
-	src: url("../fonts/INTER-MEDIUM.ttf");
+	src: url("../../fonts/INTER-MEDIUM.ttf");
 }
 
 @font-face {
 	font-family: "inter-extralight";
-	src: url("../fonts/INTER-EXTRALIGHT.ttf");
+	src: url("../../fonts/INTER-EXTRALIGHT.ttf");
 }
 
 @font-face {
 	font-family: "inter-light";
-	src: url("../fonts/INTER-LIGHT.ttf");
+	src: url("../../fonts/INTER-LIGHT.ttf");
 }
 
 @font-face {
 	font-family: "permanentmarker";
-	src: url("../fonts/PERMANENTMARKER-X99J.ttf");
+	src: url("../../fonts/PERMANENTMARKER-X99J.ttf");
 }
 
 /*-----STYLES-----*/
