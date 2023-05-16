@@ -388,10 +388,11 @@ hr {
 
 /*-----SWITCH TO MOBILE NAVBAR-----*/
 @media (max-width: 750px){
-	body {
+	html, body {
+		height: 100%;
 		overflow-x: hidden;
 	}
-	
+
 	/*--NAVBAR--*/
 	.responsive-navigation{
 		display: block;
@@ -404,7 +405,7 @@ hr {
 	/*--HEADER--*/
 	.header {
 		padding: 0px 15px;
-		height: 600px;
+		height: 900px;
 	}
 
 	.words {
