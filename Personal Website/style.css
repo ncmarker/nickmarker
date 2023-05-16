@@ -384,6 +384,92 @@ hr {
 	color: #9535d0;
 }
 
+/*-----FOOTER ANIMATION-----*/
+.figure {
+	display: inline-block;
+	height: 150px;
+	width: auto;
+}
+
+.bubble {
+	position: absolute;
+	left: -100px;
+	right: 100px;
+	top: 5px;
+	font-family: 'Inter', arial, sans-serif;
+	font-weight: 400;
+}
+
+.figure img {
+	height: 100%;
+	top: 4px;
+	position: relative;
+}
+
+.footeranimation {
+	margin: 125px 0px 0px;
+	padding: 0px;
+	animation: movestickman 17s linear infinite;
+	position: relative;
+}
+
+@keyframes movestickman {
+		0% {-webkit-transform: translate(-700px);}
+
+		100% {-webkit-transform: translate(1300px);}
+}
+
+/*-----FOOTER-----*/
+.footer {
+	font-family: 'Inter', arial, sans-serif;
+	font-weight: 600;
+	background-color: #252525;
+	text-align: center;
+	margin-top: 0px;
+	padding: 10px 0px;
+}
+
+.navfoot {
+	color: #fff;
+	font-size: 18px;
+	text-decoration: none;
+	margin: 0px 2px;
+}
+
+.footer p {
+	color: #fff;
+	margin: 0px auto 25px;
+	padding: 25px 0px 0px;
+}
+
+.navfoot:hover {
+	color: #b5b5b5;
+}
+
+.footer .icon {
+	width: 30px;
+	height: auto;
+	margin: 0px 5px;
+}
+
+.footer .icon:hover {
+	background-color: #b5b5b5;
+	border-radius: 50%;
+}
+
+.footer #logo {
+	width: 15%;
+	margin: 25px auto;
+}
+
+.footer #copyright {
+	font-family: 'Inter', arial, sans-serif;
+	font-weight: 400;
+	font-size: 12px;
+	margin: 0px auto;
+	padding: 0px 0px 15px;
+}
+
 
 
 /*-----SWITCH TO MOBILE NAVBAR-----*/
@@ -461,6 +547,17 @@ hr {
 	.card img {
 		margin-left: -140px;
 		scalee: .95;
+	}
+
+	/*--FOOTER ANIMATION--*/
+	.footeranimation {
+		animation: movestickman 10s linear infinite;
+	}
+
+	@keyframes movestickman {
+		0% {-webkit-transform: translate(-300px);}
+
+		100% {-webkit-transform: translate(500px);}
 	}
 
 }
