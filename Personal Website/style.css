@@ -24,6 +24,7 @@
 	src: url("../../../fonts/PERMANENTMARKER-X99J.ttf");
 }
 
+
 /*-----STYLES-----*/
 body {
 	padding: 0px;
@@ -35,7 +36,8 @@ body {
 .nav {
 	height: 65px;
 	width:  100%;
-	font-family: inter-medium, arial, sans-serif;
+	font-family: Inter, arial, sans-serif;
+	font-weight: 600;
 	background-color:  #252525;
 }
 
@@ -135,7 +137,8 @@ body {
 	text-decoration: none;
 	color: #FFF;
 	font-size: 22px;
-	font-family: inter-medium, arial, sans-serif;
+	font-family: Inter, arial, sans-serif;
+	font-weight: 600;
 	padding: 5px 10px;
 	border-radius: 10px;
 }
@@ -246,7 +249,7 @@ body {
 }
 
 .header h1 {
-	font-family: permanentmarker, arial, sans-serif;
+	font-family: 'Permanent Marker', arial, sans-serif;
 	margin: 15px 0px 0px;
 	line-height: 75px;
 	display: inline-block;
@@ -255,7 +258,8 @@ body {
 }
 
 .header h2 {
-	font-family: inter-light, arial, sans-serif;
+	font-family: Inter, arial, sans-serif;
+	font-weight: 500;
 	font-size: 18px;
 	margin: 20px 0px 0px;
 	display: inline-block;
@@ -265,7 +269,8 @@ body {
 
 .header h2 strong {
 	color: #9535d0;
-	font-family: inter-medium, arial, sans-serif;
+	font-family: Inter, arial, sans-serif;
+	font-weight: 800;
 }
 
 .header .doodleanimation {
