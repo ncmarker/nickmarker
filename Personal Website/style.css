@@ -1,0 +1,318 @@
+/*-----FONTS-----*/
+@font-face {
+	font-family: "inter-bold";
+	src: url("fonts/INTER-BOLD.ttf");
+}
+
+@font-face {
+	font-family: "inter-medium";
+	src: url("fonts/INTER-MEDIUM.ttf");
+}
+
+@font-face {
+	font-family: "inter-extralight";
+	src: url("fonts/INTER-EXTRALIGHT.ttf");
+}
+
+@font-face {
+	font-family: "inter-light";
+	src: url("fonts/INTER-LIGHT.ttf");
+}
+
+@font-face {
+	font-family: "permanentmarker";
+	src: url("fonts/PERMANENTMARKER-X99J.ttf");
+}
+
+/*-----STYLES-----*/
+body {
+	padding: 0px;
+	margin:  0px;
+	text-align: center;
+}
+
+/*------NAVBAR-----*/
+.nav {
+	height: 65px;
+	width:  100%;
+	font-family: inter-medium, arial, sans-serif;
+	background-color:  #252525;
+}
+
+.nav-container{
+	max-width: 1000px;
+	text-align: right;
+	margin: 0 auto;
+	justify-content: center;
+	padding: 0px 25px;
+}
+
+.nav img {
+	vertical-align: middle;
+	display: inline-block;
+	float: left;
+	width: 200px;
+	margin: 12px;
+	padding: 2px 5px;
+}
+
+.nav a {
+	display: inline-block;
+	margin: 12px 15px;
+	text-decoration: none;
+	border-radius: 15px;
+	color:  #FFF;
+	vertical-align: middle;
+	font-size: 18px;
+	padding: 10px 17px;
+}
+
+.active {
+	background-color: #9535d0;
+}
+
+.nav a:hover {
+	background-color: #431161;
+}
+
+.clear {
+	clear: both;
+}
+
+.responsive-navigation {
+	display: none;
+}
+
+/*-----SWITCH TO MOBILE NAVBAR-----*/
+@media (max-width: 750px){
+	/*--NAVBAR--*/
+	.responsive-navigation{
+		display: block;
+	}
+
+	.nav {
+		display: none;
+	}
+
+	/*--HEADER--*/
+	.header {
+		padding: 0px 15px;
+	}
+
+	.words {
+		margin-top: 100px;
+	}
+
+	.doodleanimation {
+		visibility: hidden;
+		display: none;
+	}
+
+	.header h1 {
+		animation: writinganimation 1s linear 1 forwards;
+	}
+}
+
+
+/*-----RESPONSIVE NAVBAR-----*/
+.res-nav {
+	background-color: #252525;
+	padding: 0px 15px;
+	height: 65px;
+	justify-content: center;
+}
+
+.res-nav img {
+	width: 200px;
+	margin-top: 13px;
+}
+
+.side-nav ul {
+	list-style: none;
+}
+
+.side-nav a {
+	text-decoration: none;
+	color: #FFF;
+	font-size: 22px;
+	font-family: inter-medium, arial, sans-serif;
+	padding: 5px 10px;
+	border-radius: 10px;
+}
+
+.side-nav a:hover {
+	background-color: #431161;
+}
+
+.side-nav li {
+	margin: 10px 0px;
+}
+
+.button {
+	background-color: #252525;
+	display: inline-block;
+	margin-top: 15px;
+	float: right;
+}
+
+.side-nav {
+  background: #252525;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 40%; /* 100% = fullscreen */
+  height: 100vh;
+  transition: transform 0.7s, opacity 1s;
+  transform: translateX(100%);
+  opacity: 0;
+}
+
+.side-nav.show {
+  transform: translateX(0%);
+  opacity: 1;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: inherit;
+}
+
+
+.hamburger {
+  position: relative;
+  margin-left: auto;
+  width: 45px;
+  height: 35px;
+  z-index: 1;
+}
+
+.hamburger span {
+  position: absolute;
+  left: 0;
+  background: #FFF;
+  width: inherit;
+  height: 5px;
+  transition: transform 0.5s, opacity 0.5s;
+}
+
+.top-line {
+  top: 0px;
+}
+
+.center-line {
+  top: 15px;
+}
+
+.bottom-line {
+  bottom: 0px;
+}
+
+.top-line.active {
+  transform: translateY(15px) rotate(45deg);
+}
+
+.center-line.active {
+  opacity: 0;
+}
+
+.bottom-line.active {
+  transform: translateY(-15px) rotate(-45deg);
+}
+
+/*-----HEADER AND ANIMATIONS-----*/
+.container {
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+.header {
+	background-image: url('img/headerbg.png');
+	background-position: top;
+	background-repeat: no-repeat;
+	background-size: cover;
+	text-align: center;
+	height: 600px;
+	padding: 0px 50px;
+}
+
+.words {
+	margin: 0 auto;
+	margin-top: 200px;
+	display: inline-block;
+	text-align: center;
+}
+
+.header h1 {
+	font-family: permanentmarker, arial, sans-serif;
+	margin: 15px 0px 0px;
+	line-height: 75px;
+	display: inline-block;
+	font-size: 90px;
+	animation: writinganimation 4.5s linear 1 forwards;
+}
+
+.header h2 {
+	font-family: inter-light, arial, sans-serif;
+	font-size: 18px;
+	margin: 20px 0px 0px;
+	display: inline-block;
+	text-align: center;
+	max-width: 800px;
+}
+
+.header h2 strong {
+	color: #9535d0;
+	font-family: inter-medium, arial, sans-serif;
+}
+
+.header .doodleanimation {
+	margin: 0px;
+	display: inline-block;
+	width: 800px;
+	height: auto;
+	position: relative;
+	bottom: 260px;
+	z-index: -1;
+	animation: doodleanimation 4.5s linear 1 forwards;
+}
+
+.header .doodleanimation img {
+	width: 100%;
+}
+
+@keyframes doodleanimation {
+	0% {opacity: 1;}
+	90% {opacity: .8;}
+	100% {opacity: 0;}
+}
+
+@keyframes writinganimation {
+	0% {opacity: 0;}
+	30% {opacity: .3;}
+	60% {opacity: .6;}
+	100% {opacity: 1;}
+}
+
+.header .scrollanimation {
+	margin: 0px auto;
+	width: 200px;
+	height: auto;
+	display: inline-block;
+	position: relative;
+	bottom: 400px;
+
+}
+
+.header .scrollanimation img {
+	width: 100%;
+}
+
+hr {
+	margin: 0px;
+	height: 2px;
+	background-color: #b5b5b5;
+	border: none;
+}

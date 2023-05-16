@@ -21,186 +21,7 @@
 		<title>Nick Marker Design</title>
 
 		<style>
-			body {
-				padding: 0px;
-				margin:  0px;
-			}
-
-			.nav {
-				height: 65px;
-				width:  100%;
-				font-family: inter-medium, arial, sans-serif;
-				background-color:  #252525;
-			}
-
-			.nav-container{
-				max-width: 1000px;
-				text-align: right;
-				margin: 0 auto;
-				justify-content: center;
-				padding: 0px 25px;
-			}
-
-			.nav img {
-				vertical-align: middle;
-				display: inline-block;
-				float: left;
-				width: 200px;
-				margin: 10px 0px;
-				padding: 5px 0px;
-			}
-
-			.nav a {
-				display: inline-block;
-				margin: 10px 10px;
-				text-decoration: none;
-				border-radius: 15px;
-				color:  #FFF;
-				vertical-align: middle;
-				font-size: 18px;
-				padding: 2px 5px;
-			}
-
-			.active {
-				background-color: #9535d0;
-			}
-
-			.nav a:hover {
-				background-color: #431161;
-			}
-
-			.clear {
-				clear: both;
-			}
-
-			.responsive-navigation {
-				display: none;
-			}
-
-			.header{}
-
-			/*KEEP BELOW THIS*/
-			@media (max-width: 750px){
-				.responsive-navigation{
-					display: block;
-				}
-
-				.nav {
-					display: none;
-				}
-			}
-
-
-			/*RESPONSIVE NAVBAR*/
-			.res-nav {
-				background-color: #252525;
-				padding: 0px 15px;
-				height: 65px;
-				justify-content: center;
-			}
-
-			.res-nav img {
-				width: 200px;
-				margin-top: 13px;
-			}
-
-			.side-nav ul {
-				list-style: none;
-			}
-
-			.side-nav a {
-				text-decoration: none;
-				color: #FFF;
-				font-size: 22px;
-				font-family: inter-medium, arial, sans-serif;
-				padding: 5px 10px;
-				border-radius: 10px;
-			}
-
-			.side-nav a:hover {
-				background-color: #431161;
-			}
-
-			.side-nav li {
-				margin: 10px 0px;
-			}
-
-			.button {
-				background-color: #252525;
-				display: inline-block;
-				margin-top: 10px;
-				float: right;
-			}
-
-			.side-nav {
-			  background: #252525;
-			  position: fixed;
-			  top: 0;
-			  right: 0;
-			  width: 40%; /* 100% = fullscreen */
-			  height: 100vh;
-			  transition: transform 0.7s, opacity 1s;
-			  transform: translateX(100%);
-			  opacity: 0;
-			}
-
-			.side-nav.show {
-			  transform: translateX(0%);
-			  opacity: 1;
-			}
-
-			.list {
-			  display: flex;
-			  flex-direction: column;
-			  justify-content: center;
-			  align-items: center;
-			  height: inherit;
-			}
-
-
-			.hamburger {
-			  position: relative;
-			  margin-left: auto;
-			  width: 45px;
-			  height: 35px;
-			  z-index: 1;
-			}
-
-			.hamburger span {
-			  position: absolute;
-			  left: 0;
-			  background: #FFF;
-			  width: inherit;
-			  height: 5px;
-			  transition: transform 0.5s, opacity 0.5s;
-			}
-
-			.top-line {
-			  top: 0px;
-			}
-
-			.center-line {
-			  top: 15px;
-			}
-
-			.bottom-line {
-			  bottom: 0px;
-			}
-
-			.top-line.active {
-			  transform: translateY(15px) rotate(45deg);
-			}
-
-			.center-line.active {
-			  opacity: 0;
-			}
-
-			.bottom-line.active {
-			  transform: translateY(-15px) rotate(-45deg);
-			}
-
-
-
+			
 		</style>
 	</head>
 	<body>
@@ -239,8 +60,33 @@
 		</div>
 		<!--RESPONSIVE NAVBAR END-->
 
+		<!--HEADER-->
+		<div class="header">
+			<div class="container">
+				<div class="words">
+					<h2>Hello, my name is</h2>
+					<br>
+					<h1>Nick Marker</h1>
+					<br>
+					<h2>Innovative student <strong>designer</strong> with a vision to create the next immersive interface at the intersection of contemporary technology and software development.</h2>
+				</div>
+				<br>
+				<div class="doodleanimation">
+					<img id="gif" src="">
+					<script>document.getElementById('gif').src="img/DoodleAnimationTrimmed.gif?a="+Math.random()</script>
+				</div>
+				<!--<img src="img/DoodleAnimationTrimmed.gif" alt="Doodle Animation"></div>use this if above causes issues and delete closing div above-->
+				<br>
+				<div class="scrollanimation"><img src="img/ScrollDown.gif" alt="Scroll Down"></div>
+			</div>
+		</div>
+
+	<hr>
+
 
 	<script>
+
+		/*--NAVBAR SLIDE IN/OUT--*/
 		const hamburgerBtn = document.getElementById("js-hamburger");
 		const topLine = document.getElementById("js-top-line");
 		const centerLine = document.getElementById("js-center-line");
@@ -260,7 +106,6 @@
 		$("#js-bottom-line").toggleClass("active");
 		$("#js-nav").toggleClass("show");
 		});
-
 	</script>
 
 	</body>
