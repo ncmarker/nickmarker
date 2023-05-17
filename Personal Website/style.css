@@ -527,10 +527,6 @@ hr {
 	margin: 0px auto;
 }
 
-#nmdabout {
-	width: 100%;
-}
-
 
 
 /*-----SWITCH TO MOBILE NAVBAR-----*/
@@ -552,7 +548,7 @@ hr {
 	/*--HEADER--*/
 	.header {
 		padding: 0px 15px;
-		height: 700px;
+		height: 600px;
 	}
 
 	.words {
@@ -610,6 +606,13 @@ hr {
 		scalee: .95;
 	}
 
+	/*--FOOTER--*/
+	.footer .icon {
+		width: 60px;
+		height: auto;
+		margin: 5px 10px;
+	}
+
 	/*--ABOUT PAGE--*/
 	.ppic {
 		width: 75%;
@@ -627,12 +630,17 @@ hr {
 	.valcard {
 		width: 90%;
 		height: auto;
+		padding: 7px 15px;
 		display: block;
 		margin: 40px auto;
 	}
 
 	.valcard img {
 		width: 50%;
+	}
+
+	#nmdabout {
+		width: 90%;
 	}
 
 }
