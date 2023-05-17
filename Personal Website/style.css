@@ -560,7 +560,7 @@ hr {
 	}
 
 	.card {
-		width: 250px;
+		width: 280px;
 		height: 425px;
 		margin: 20px 20px;
 	}
@@ -570,12 +570,12 @@ hr {
 	}
 
 	.thumbnail {
-		width: 250px;
+		width: 280px;
 		height: 170px;
 	}
 
 	.seeproject {
-		width: 250px;
+		width: 280px;
 	}
 
 	.card img {
@@ -605,7 +605,7 @@ hr {
 	}
 
 	.valcard {
-		width: 80%;
+		width: 70%;
 		height: auto;
 		padding: 10px 15px;
 		display: block;
