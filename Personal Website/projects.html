@@ -28,10 +28,16 @@
 		<!--JQUERY FOR RESPONSIVE NAVBAR-->
 		<script src="/path/to/cdn/jquery.slim.min.js"></script>
 
-		<title>Nick Marker Design</title>
+
+		<!--JQUERY FOR WORD FLIPPER IN HEADER-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script> 
+
+		<title>Nick Marker Design--Projects</title>
 
 		<style>
-			/*CAN ADD PROJECT STYLING HERE IF I WANT*/
+			#changeText {
+				display: inline-block;
+			}
 		</style>
 	</head>
 	<body>
@@ -78,7 +84,7 @@
 					<br>
 					<h1>Nick Marker</h1>
 					<br>
-					<h2>Innovative student <strong>designer</strong> with a vision to create the next immersive interface at the intersection of contemporary technology and software development.</h2>
+					<h2>Innovative student <strong><div id='changeText'>designer</div> </strong>with a vision to create the next immersive interface at the intersection of contemporary technology and software development.</h2>
 				</div>
 				<br>
 				<div class="doodleanimation">
@@ -192,7 +198,7 @@
 
 		<!--FOOTER START-->
 		<div class="footer">
-			<p><a class="navfoot" href="projects.html">PROJECTS</a> | <a class="navfoot" href="about.html">ABOUT</a> | <a class="navfoot" href="resume.htmml">RESUME</a></p>
+			<p><a class="navfoot" href="projects.html">PROJECTS</a> | <a class="navfoot" href="about.html">ABOUT</a> | <a class="navfoot" href="resume.html">RESUME</a></p>
 			<a href="tel:484-365-3437"><img class="icon" src="img/Phone.png" alt="Call Me"></a>
 			<a href="mailto:ncmarker@usc.edu"><img class="icon" src="img/Mail.png" alt="Email Me"></a>
 			<a href="https://www.linkedin.com/in/nickmarker" target="_blank"><img class="icon" src="img/Linkedin.png" alt="Linkedin Profile"></a>
@@ -224,6 +230,19 @@
 		$("#js-bottom-line").toggleClass("active");
 		$("#js-nav").toggleClass("show");
 		});
+
+
+		/*--WORD FLIPPER IN HEADER--*/
+		$(function () { 
+		  count = 0; 
+		  wordsArray = ["designer", "developer", "programmer, intern"]; 
+		  setInterval(function () { 
+		    count++; 
+		    $("#changeText").fadeOut(1500, function () { 
+		      $(this).text(wordsArray[count % wordsArray.length]).fadeIn(1500); 
+		    }); 
+		  }, 2000); 
+		}); 
 	</script>
 
 	</body>

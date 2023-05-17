@@ -2,8 +2,8 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<meta name="description" content="Innovative student designer with a vision to create the next immersive interface at the intersection of contemporary technology and digital marketing.">
-	  	<meta name="keywords" content="Nick Marker, Design, UI/UX, USC">
+		<meta name="description" content="Innovative student developer with a vision to create the next immersive interface at the intersection of contemporary technology and software development.">
+	  	<meta name="keywords" content="Nick Marker, Design, UI/UX, USC, W2W">
 	  	<meta name="author" content="Nick Marker">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -28,86 +28,11 @@
 		<!--JQUERY FOR RESPONSIVE NAVBAR-->
 		<script src="/path/to/cdn/jquery.slim.min.js"></script>
 
-		<!--jQUERY CODE FOR DOWNLOAD BUTTON START-->
-		<script   src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
-
-		<script>
-			$(document).ready(function() {
-				//alert('Hello World')
-
-				$("#resbutton").hover(function(){  
-				 	$('#dload').attr('src','img/resume/downloadicon_purple.png');  
-				 	}, function(){  
-					$('#dload').attr('src','img/resume/downloadicon_white.png');  
-				});  
-			});
-		</script>
-
-		<title>Nick Marker Design--Resume</title>
+		<title>Nick Marker Design--W2W</title>
 
 		<style>
-			.header h6 {
-				visibility: hidden;
-			}
-
-			.header h2 {
-				visibility: hidden;
-			}
-
-			.doodleanimation {
-				visibility: hidden;
-			}
-
-			.header h1 {
-				animation: none;
-			}	
-
-			#resbutton {
-				background-color: #9535d0;
-				color: white;
-				padding: 2px 5px;
-				margin: 25px auto;
-				text-align: center;
-				width: 200px;
-				height: 45px;
-				border-radius: 40px;
-				border: 2px solid #9535d0;
-				position: relative;
-			}
-
-			#resbutton p, #resbuttonlink {
-				font-family: 'Inter', arial, sans-serif;
-				font-weight: 600;
-				line-height: 45px;
-				font-size: 20px;
-				text-decoration: none;
-				margin: 0px auto;
-				margin-left: -25px;
-			}
-
-			#resbutton:hover {
-				background-color: #fff;
-				color: #9535d0;
-			}
-
-			#resbutton img {
-				width: 22px ;
-				height: auto;
-				position: absolute;
-				left: 150px;
-				top: 12px;
-			}	
-
-			#resume {
-				width: 75%;
-				height: auto;
-				margin: 70px auto;
-				text-align: center;
-				border: 1px solid #252525;
-			}
-
-			#resume img {
-				width: 100%;
+			#changeText {
+				display: inline-block;
 			}
 		</style>
 	</head>
@@ -116,9 +41,9 @@
 		<div class="nav">
 			<div class="nav-container">
 				<img src="img/NMDesignLogo.png" alt="NMDesign Logo">
-				<a href="projects.html">Projects</a>
+				<a class="active" href="projects.html">Projects</a>
 				<a href="about.html">About</a>
-				<a class="active" href="resume.html">Resume</a>
+				<a href="resume.html">Resume</a>
 				<div class='clear'></div>
 			</div>
 		</div>
@@ -131,9 +56,9 @@
 			  <!-- Side Nav -->
 			  <div id="js-nav" class="side-nav">
 			    <ul class="list">
-			      <li><a href="projects.html">Projects</a></li>
+			      <li><a class="active" href="projects.html">Projects</a></li>
 			      <li><a href="about.html">About</a></li>
-			      <li><a class="active" href="resume.html">Resume</a></li>
+			      <li><a href="resume.html">Resume</a></li>
 			    </ul>
 			  </div>
 			  <!-- Hamburger Button -->
@@ -147,35 +72,60 @@
 		</div>
 		<!--RESPONSIVE NAVBAR END-->
 
-		<!--HEADER-->
-		<div class="header">
-			<div class="container">
-				<div class="words">
-					<h2>Hello, my name is</h2>
-					<br>
-					<h1>Resume</h1>
-					<br>
-					<h2>Innovative student <strong>designer</strong> with a vision to create the next immersive interface at the intersection of contemporary technology and software development.</h2>
-				</div>
-				<br>
-				<div class="doodleanimation">
-					<img id="gif" src="">
-					<script>document.getElementById('gif').src="img/DoodleAnimationTrimmed.gif?a="+Math.random()</script>
-				</div>
-				<br>
-				<div class="scrollanimation"><img src="img/ScrollDown.gif" alt="Scroll Down"></div>
+
+		<!--W2W PROJECT CONTENT-->
+		<div class="pheader">
+		<div class="pimgmobile"><img src="img/w2w/w2wvertical.png" alt="When to Work Mockup Vertical"></div>
+		<div class="pheadtext">
+			<h1>When to Work Mobile App Redesign</h1>
+			<br>
+			<h6>A modernized redesign of an employee scheduling app. Reducing the repetitive aspects of the app's pages and condensing the app's various tasks make this redesign aimed toward increasing user friendliness.</h6>
+			<br>
+
+			<div class="infobox"><h5>Duration</h5><p>5 days, August 2022</p></div>
+			<div class="infobox"><h5>Role</h5><p>UI/UX Designer</p></div>
+			<div class="infobox"><h5>Tools</h5><p>Figma, Adobe Illustrator, Adobe Photoshop</p></div>
+		</div>
+		<div class="pimg"><img src="img/w2w/w2wvertical.png" alt="When to Work Mockup Vertical"></div>
+	</div>
+
+	<div class="pcontent"> 
+		<h2 class="sectionhead">Introduction</h2>
+		<br>
+		<p>WhenToWork is a privately owned California corporation that provides an online scheduling platform to businesses across the country. For this individual project I used my personal experience with the WhenToWork app over the course of four years, along with surveyed user input to identify the primary problems within the current app and redesign a more clear, user-friendly, application.</p>
+		<br>
+
+		<h2 class="sectionhead">Final Redesign</h2>
+		<div>
+			<div class="designslide">
+				<h5>Menu Page</h5>
+				<p>Contains the basic information about the schedule and time off</p>
+				<img src="#" alt="Slide 1">
+			</div>
+			<div class="designslide">
+				<h5>Specific Date Page</h5>
+				<p>When a specific day is chosen, the assigned shifts for that day appear</p>
+				<img src="#" alt="Slide 2">
+			</div>
+			<div class="designslide">
+				<h5>Dashboard Page</h5>
+				<p>Contains updates on upcoming shifts and staff messages</p>
+				<img src="#" alt="Slide 3">
+			</div>
+			<div class="designslide">
+				<h5>Staff Page</h5>
+				<p>A scrollable page with each staff member's contact information</p>
+				<img src="#" alt="Slide 4">
+			</div>
+			<div class="designslide">
+				<h5>Account Page</h5>
+				<p>Contains account information and general settings for the app</p>
+				<img src="#" alt="Slide 5">
 			</div>
 		</div>
-		<hr>
-		<!--HEADER END-->
+	</div>
+		
 
-		<!--RESUME SECTION START-->
-		<a id="resbuttonlink" href="https://drive.google.com/file/d/1BbQXjOXUd4rf9rpzpDnzvLRuvdq-BFVK/view?usp=sharing" target="_blank">
-			<div id="resbutton"><p>Download</p><img id="dload" src="img/resume/downloadicon_white.png" alt="Download Icon"></div>
-		</a>
-
-		<div id="resume"><img src="img/resume/Marker_Nick_Resume.png" alt="Nick Marker Resume"></div>
-		<!--RESUME SECTION END-->
 
 		<!--FOOTER ANIMATION START-->
 		<div class="footeranimation">
@@ -218,6 +168,7 @@
 		$("#js-bottom-line").toggleClass("active");
 		$("#js-nav").toggleClass("show");
 		});
+
 	</script>
 
 	</body>

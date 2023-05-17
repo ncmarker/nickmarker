@@ -1,39 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&display=swap');
 
 
-/*-----FONTS-----*/
-/*@font-face {
-	font-family: "inter-bold";
-	src: url("../../../fonts/INTER-BOLD.ttf");
-}
-
-@font-face {
-	font-family: "inter-medium";
-	src: url("../../../fonts/INTER-MEDIUM.ttf");
-}
-
-@font-face {
-	font-family: "inter-extralight";
-	src: url("../../../fonts/INTER-EXTRALIGHT.ttf");
-}
-
-@font-face {
-	font-family: "inter-light";
-	src: url("../../../fonts/INTER-LIGHT.ttf");
-}
-
-@font-face {
-	font-family: "permanentmarker";
-	src: url("../../../fonts/PERMANENTMARKER-X99J.ttf");
-}*/
-
-
 /*-----STYLES-----*/
 body {
 	padding: 0px;
 	margin:  0px;
 	text-align: center;
 }
+
 
 /*------NAVBAR-----*/
 .nav {
@@ -87,6 +61,7 @@ body {
 .responsive-navigation {
 	display: none;
 }
+
 
 /*-----RESPONSIVE NAVBAR-----*/
 .res-nav {
@@ -419,6 +394,7 @@ hr {
 		100% {-webkit-transform: translate(1300px);}
 }
 
+
 /*-----FOOTER-----*/
 .footer {
 	font-family: 'Inter', arial, sans-serif;
@@ -469,6 +445,7 @@ hr {
 	margin: 0px auto;
 	padding: 0px 0px 15px;
 }
+
 
 /*-----ABOUT PAGE-----*/
 .ppic img {
@@ -529,7 +506,7 @@ hr {
 
 
 
-/*-----SWITCH TO MOBILE NAVBAR-----*/
+/*-----SWITCH TO MOBILE-----*/
 @media (max-width: 750px){
 	html, body {
 		height: 100%;
