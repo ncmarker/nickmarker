@@ -505,6 +505,119 @@ hr {
 }
 
 
+/*-----SPECIFIC PROJECT HEADER-----*/
+.pimgmobile {
+	display: none;
+}
+
+.pheader {
+	border: 1px solid white;
+	padding: 50px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.pheadtext {
+	display: inline-block;
+	width: 50%;
+	vertical-align: middle;
+	text-align: left;
+	margin-right: 25px;
+}
+
+.pimg {
+	display: inline-block;
+	width: 40%;
+	margin: 0px;
+	vertical-align: middle;
+}
+
+.pimg img {
+	width: 100%;
+	height: auto;
+}
+
+.pheadtext h1 {
+	font-family: 'Inter', arial, sans-serif;
+	font-weight: 800;
+	font-size: 80px;
+	margin-bottom: 0px;
+}
+
+.pheadtext h6 {
+	font-family: 'Inter', arial, sans-serif;
+	font-weight: 400;
+	font-size: 20px;
+	margin-top: 20px;
+}
+
+.infobox h5 {
+	font-family: 'Inter', arial, sans-serif;
+	font-weight: 600;
+	font-size: 20px;
+	margin: 10px 0px;
+}
+
+.infobox p {
+	font-family: 'Inter', arial, sans-serif;
+	font-weight: 200;
+}
+
+.infobox {
+	width: 125px;
+	height: 100px;
+	display: inline-block;
+	margin: 0px 20px 0px 0px;
+	vertical-align: top;
+}
+
+
+/*-----SPECIFIC PROJECT CONTENT-----*/
+.project {
+	text-align: left;
+}
+
+.project p {
+	font-family: 'Inter', arial, sans-serif;
+	font-weight: 300;
+	font-size: 16px;
+}
+
+.project h2 {
+	font-family: 'Inter', arial, sans-serif;
+	font-weight: 700;
+	font-size: 32px;
+	margin: 50px 0px 20px;
+}
+
+.project h5 {
+	font-family: 'Inter', arial, sans-serif;
+	font-weight: 500;
+	font-size: 20px;
+	margin: 10px 0px;
+}
+
+.designs {
+	text-align: center;
+}
+
+.designslide {
+	width: 18%;
+	margin: 10px 5px;
+	text-align: center;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.newhead {
+	margin: 50px 0px;
+	visibility: hidden;
+}
+
+
+
+
+
 
 /*-----SWITCH TO MOBILE-----*/
 @media (max-width: 750px){
@@ -621,8 +734,50 @@ hr {
 	}
 
 	/*--RESUME PAGE--*/
-	resume {
+	#resume {
 		width: 85%;
+	}
+
+	/*--SPECIFIC PROJECTS HEADER--*/
+	.pimg {
+		display: none;
+	}
+
+	.pimgmobile {
+		display: block;
+		width: 65%;
+		margin: 0 auto;
+	}
+
+	.pimgmobile img {
+		width: 100%;
+	}
+
+	.pheadtext {
+		display: block;
+		width: 85%;
+		text-align: center;
+		margin: 0 auto;
+	}
+
+	.pheadtext h1 {
+		font-size: 36px;
+	}
+
+	.pheadtext h6 {
+		font-weight: 300;
+	}
+
+
+	/*--SPECIFIC PROJECT CONTENT--*/
+	.designslide {
+		width: 90%;
+		margin: 30px auto;
+	}
+
+	.designslide img {
+		width: 75%;
+		height: auto;
 	}
 
 }
