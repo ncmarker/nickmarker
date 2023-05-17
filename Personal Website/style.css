@@ -561,7 +561,7 @@ hr {
 	}
 
 	.header .scrollanimation {
-		bottom: 475px;
+		bottom: 450px;
 	}
 
 	.header h1 {
@@ -628,9 +628,9 @@ hr {
 	}
 
 	.valcard {
-		width: 90%;
+		width: 80%;
 		height: auto;
-		padding: 7px 15px;
+		padding: 10px 15px;
 		display: block;
 		margin: 40px auto;
 	}
@@ -641,6 +641,11 @@ hr {
 
 	#nmdabout {
 		width: 90%;
+	}
+
+	/*--RESUME PAGE--*/
+	resume {
+		width: 85%;
 	}
 
 }

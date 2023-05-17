@@ -28,7 +28,22 @@
 		<!--JQUERY FOR RESPONSIVE NAVBAR-->
 		<script src="/path/to/cdn/jquery.slim.min.js"></script>
 
-		<title>Nick Marker Design--About</title>
+		<!--jQUERY CODE FOR DOWNLOAD BUTTON START-->
+		<script   src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+
+		<script>
+			$(document).ready(function() {
+				//alert('Hello World')
+
+				$("#resbutton").hover(function(){  
+				 	$('#dload').attr('src','img/resume/downloadicon_purple.png');  
+				 	}, function(){  
+					$('#dload').attr('src','img/resume/downloadicon_white.png');  
+				});  
+			});
+		</script>
+
+		<title>Nick Marker Design--Resume</title>
 
 		<style>
 			.header h6 {
@@ -45,30 +60,55 @@
 
 			.header h1 {
 				animation: none;
+			}	
+
+			#resbutton {
+				background-color: #9535d0;
+				color: white;
+				padding: 2px 5px;
+				margin: 25px auto;
+				text-align: center;
+				width: 200px;
+				height: 45px;
+				border-radius: 40px;
+				border: 2px solid #9535d0;
+				position: relative;
 			}
 
-			.content h2 {
+			#resbutton p, #resbuttonlink {
 				font-family: 'Inter', arial, sans-serif;
-				font-weight: 700;
-				font-size: 35px;
-				margin: 0px 0px 50px;
-				text-align: left;
+				font-weight: 600;
+				line-height: 45px;
+				font-size: 20px;
+				text-decoration: none;
+				margin: 0px auto;
+				margin-left: -25px;
 			}
 
-			.content p {
-				font-family: 'Inter', arial, sans-serif;
-				font-weight: 200;
-				margin: 0px 2px;
+			#resbutton:hover {
+				background-color: #fff;
+				color: #9535d0;
 			}
 
-			.values {
-				margin: 100px auto;
+			#resbutton img {
+				width: 22px ;
+				height: auto;
+				position: absolute;
+				left: 150px;
+				top: 12px;
+			}	
+
+			#resume {
+				width: 75%;
+				height: auto;
+				margin: 70px auto;
+				text-align: center;
+				border: 1px solid #252525;
 			}
 
-			#nmdabout {
+			#resume img {
 				width: 100%;
 			}
-
 		</style>
 	</head>
 	<body>
@@ -77,8 +117,8 @@
 			<div class="nav-container">
 				<img src="img/NMDesignLogo.png" alt="NMDesign Logo">
 				<a href="projects.html">Projects</a>
-				<a class="active" href="about.html">About</a>
-				<a href="resume.html">Resume</a>
+				<a href="about.html">About</a>
+				<a class="active" href="resume.html">Resume</a>
 				<div class='clear'></div>
 			</div>
 		</div>
@@ -92,8 +132,8 @@
 			  <div id="js-nav" class="side-nav">
 			    <ul class="list">
 			      <li><a href="projects.html">Projects</a></li>
-			      <li><a class="active" href="about.html">About</a></li>
-			      <li><a href="resume.html">Resume</a></li>
+			      <li><a href="about.html">About</a></li>
+			      <li><a class="active" href="resume.html">Resume</a></li>
 			    </ul>
 			  </div>
 			  <!-- Hamburger Button -->
@@ -113,7 +153,7 @@
 				<div class="words">
 					<h2>Hello, my name is</h2>
 					<br>
-					<h1>About</h1>
+					<h1>Resume</h1>
 					<br>
 					<h2>Innovative student <strong>designer</strong> with a vision to create the next immersive interface at the intersection of contemporary technology and software development.</h2>
 				</div>
@@ -129,55 +169,13 @@
 		<hr>
 		<!--HEADER END-->
 
-		<!--ABOUT CONTENT START-->
-		<div class="content">
-			<div class="aboutme">
-				<h2>About Me</h2>
-				<div class="ppic"><img src="img/about/profilepic.jpg" alt="Profile Pic"></div>
-				<div class="text">
-					<p>I am a resilient and highly organized designer/developer who creates captivating, user friendly interfaces that enable users to experience the essence of a company digitally.</p><br/>
+		<!--RESUME SECTION START-->
+		<a id="resbuttonlink" href="https://drive.google.com/file/d/1BbQXjOXUd4rf9rpzpDnzvLRuvdq-BFVK/view?usp=sharing" target="_blank">
+			<div id="resbutton"><p>Download</p><img id="dload" src="img/resume/downloadicon_white.png" alt="Download Icon"></div>
+		</a>
 
-					<p>I am a sophomore at the University of Southern California working towards a Bachelor's degree in Computer Science and Game Development with a minor in Web Development. I am eagerly pursing a position as a tech-based product designer or software developer, as I have an eye for creativity and am passionate about the technology of the future. Through my current UX position and independent work, I have a knack for evolving the user expereince through unique designs and website development. You can find me researching new programming techniques for hours or deeply analyzing user data, all to construct the most efficient design for the task at hand, and even pitch such ideas to senior leaders.</p><br/>
-
-					<p>In my free time I often find myself doodling tattoo concepts or watching YouTube to learn new applications of programming. I also work hard to stay active, usually by hitting the gym or taking a hike at the nearest natural park. I enjoy exploring new places and traveling with my boyfriend, wrapping up a nice day with a few episodes of South Park.</p><br/>
-
-					<p>I am a dedicated and determined student who is continuously searching for new opportunities that will allow me to advance as a Product Designer or Software Developer, all while enjoying every step of the way.</p>
-				</div>
-			</div>
-			<!--ABOUT CONTENT END-->
-
-			<!--VALUES START-->
-			<div class="values">
-				<h2>Core Values</h2>
-				<div class="valcard" id="c1">
-					<img id="c1img" src="img/about/AboutLogo1_white.png" alt="inclusion Icon">
-					<h3>Inclusion</h3>
-					<p>With my past, current, and future work I aspire to create designs that are not only accessible to all, but also promote the inclusion of minority groups while browsing the web.</p>
-				</div>
-				<div class="valcard">
-					<img src="img/about/AboutLogo2_white.png" alt="inclusion Icon">
-					<h3>Curiosity</h3>
-					<p>As a designer I am always searching for new programs to further my creative abilities. I hope to educate others on my progress and my work done in website design or development.</p>
-				</div>
-				<div class="valcard">
-					<img src="img/about/AboutLogo3_white.png" alt="inclusion Icon">
-					<h3>Outreach</h3>
-					<p>When designing, I have the opportunity to create pages seen across the web. These designs should have a great influence on users, working to promote a positive message.</p>
-				</div>
-			</div>
-			<!--VALUES END-->
-
-			<!--NMDESIGN ABOUT START-->
-			<div class="aboutme">
-				<h2>About NMDesign</h2>
-				<div class="text" id="nmdabout">
-					<p>This site contains a collection of my digital design and web development related work dating back to 2021. The projects depicted are products of work done for various internships I have had and from independent work done on my own time. All projects showcase my ability to organize, plan, design, and develop the virtual media of the future. The site as a whole was completely designed and developed independently without the use of templates. Coding languages of HTML, CSS, JavaScript, and jQuery are all incorporated within the website.</p>
-				</div>
-			</div>
-			<!--NMDESIGN ABOUT END-->
-		</div>
-
-		
+		<div id="resume"><img src="img/resume/Marker_Nick_Resume.png" alt="Nick Marker Resume"></div>
+		<!--RESUME SECTION END-->
 
 		<!--FOOTER ANIMATION START-->
 		<div class="footeranimation">
