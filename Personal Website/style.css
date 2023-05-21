@@ -297,6 +297,32 @@ hr {
 	display: inline-block;
 }
 
+#comingsoon {
+	background-color: lightgrey;
+}
+
+#comingsoon {
+	color: #EBEBEB;
+}
+
+#comingsoon p {
+	visibiility: hidden;
+	opacity: 0;
+}
+
+#comingsoon .thumbnail {
+	background-color: #C2C2C2;
+}
+
+#comingsoon .thumbnail img {
+	display: none;
+}
+
+#comingsoon .seeproject {
+	background-color: #C2C2C2;
+	border: 1px solid #C2C2C2;
+}
+
 .card h4 {
 	font-family: 'Inter', arial, sans-serif;
 	font-weight: 600;
@@ -609,12 +635,99 @@ hr {
 	vertical-align: top;
 }
 
+.designslide img {
+	width: 100%;
+	border-radius: 15px;
+	box-shadow: 1px 1px 10px lightgrey;
+}
+
 .newhead {
 	margin: 50px 0px;
 	visibility: hidden;
 }
 
+.surveysection {
+	margin: 0 auto;
+	text-align: center;
+}
 
+.surveysection h5, .surveysection p {
+	text-align: left;
+}
+
+.surveyQ {
+	display: inline-block;
+	vertical-align: top;
+	width: 47%;
+	margin-bottom: 40px;
+}
+
+.surveyQ img {
+	max-width: 80%;
+}
+
+.survey-left {
+	margin-right: 50px;
+}
+
+.survey-right {
+	marign-left: 50px;
+}
+
+.problems-text {
+	width: 65%;
+	display: inline-block;
+}
+
+.original-app {
+	width: 25%;
+	display: inline-block;
+	margin-left: 50px;
+	vertical-align: top;
+	border: 1px solid lightgrey;
+}
+
+.original-app img {
+	width: 100%;
+}
+
+#step5 {
+	width:100%;
+	background-color: #252525;
+	padding: 25px 0px;
+}
+
+.center {
+	text-align: center;
+}
+
+#step5 h5 {
+	text-align: left;
+	color: #FFF;
+}
+
+#step5 img {
+	width:75%;
+	margin:0 auto;
+	text-align: center;
+}
+
+#sketch {
+	width: 75%;
+	margin: 50px 0px;
+}
+
+.designs {
+	margin-top: 50px;
+}
+
+#design-board {
+	width: 75%;
+	border-radius: 50px;
+	border: 1px solid lightgrey;
+	box-shadow: 0px 0px 10px lightgrey;
+	margin: 50px 0px;
+}
 
 
 
@@ -696,6 +809,10 @@ hr {
 		scalee: .95;
 	}
 
+	#comingsoon {
+		display: none;
+	}
+
 	/*--FOOTER--*/
 	.footer .icon {
 		width: 60px;
@@ -745,7 +862,7 @@ hr {
 
 	.pimgmobile {
 		display: block;
-		width: 65%;
+		width: 75%;
 		margin: 0 auto;
 	}
 
@@ -755,17 +872,22 @@ hr {
 
 	.pheadtext {
 		display: block;
-		width: 85%;
+		width: 90%;
 		text-align: center;
 		margin: 0 auto;
 	}
 
 	.pheadtext h1 {
-		font-size: 36px;
+		font-size: 38px;
 	}
 
 	.pheadtext h6 {
 		font-weight: 300;
+	}
+
+	.infobox {
+		margin: 0 5px;
+		height: auto;
 	}
 
 
@@ -779,5 +901,34 @@ hr {
 		width: 75%;
 		height: auto;
 	}
+
+	.surveyQ {
+		display: block;
+		vertical-align: top;
+		width: 85%;
+		margin: 0 auto 50px;
+	}
+
+	.problems-text {
+		width: 100%;
+		display: block;
+		margin: 0 auto;
+	}
+
+	.original-app {
+		width: 75%;
+		display: block;
+		margin: 65px auto;
+	}
+
+	#step5 img {
+		width: 85%;
+	}
+
+	#sketch, #design-board {
+		width: 85%;
+	}
+
+
 
 }

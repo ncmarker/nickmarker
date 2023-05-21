@@ -34,6 +34,7 @@
 			#changeText {
 				display: inline-block;
 			}
+
 		</style>
 	</head>
 	<body>
@@ -93,7 +94,7 @@
 		<!--W2W PROJECT CONTENT START-->
 		<div class="content , project"> 
 			<h2 class="sectionhead">Introduction</h2>
-			<br>
+			<br/>
 			<p>WhenToWork is a privately owned California corporation that provides an online scheduling platform to businesses across the country. For this individual project I used my personal experience with the WhenToWork app over the course of four years, along with surveyed user input to identify the primary problems within the current app and redesign a more clear, user-friendly, application.</p>
 			<hr class="newhead">
 
@@ -102,34 +103,196 @@
 				<div class="designslide">
 					<h5>Menu Page</h5>
 					<p>Contains the basic information about the schedule and time off</p>
-					<img src="#" alt="Slide 1">
+					<img src="img/w2w/w2wMenu.png" alt="Slide 1">
 				</div>
 				<div class="designslide">
 					<h5>Specific Date Page</h5>
 					<p>When a specific day is chosen, the assigned shifts for that day appear</p>
-					<img src="#" alt="Slide 2">
+					<img src="img/w2w/w2wMessages.png" alt="Slide 2">
 				</div>
 				<div class="designslide">
 					<h5>Dashboard Page</h5>
 					<p>Contains updates on upcoming shifts and staff messages</p>
-					<img src="#" alt="Slide 3">
+					<img src="img/w2w/w2wDashboard.png" alt="Slide 3">
 				</div>
 				<div class="designslide">
 					<h5>Staff Page</h5>
 					<p>A scrollable page with each staff member's contact information</p>
-					<img src="#" alt="Slide 4">
+					<img src="img/w2w/w2wStaff.png" alt="Slide 4">
 				</div>
 				<div class="designslide">
 					<h5>Account Page</h5>
 					<p>Contains account information and general settings for the app</p>
-					<img src="#" alt="Slide 5">
+					<img src="img/w2w/w2wAccount.png" alt="Slide 5">
 				</div>
 			</div>
 			<hr class="newhead"/>
 
-
-			
+			<h2 class="sectionhead">Design Process</h2>
+			<br/>
+			<div id="step1">
+				<h5><em><strong>Step 1: Research</strong></em></h5>
+				<p>In addition to my personal experience with the WhenToWork app for over four years, I also surveyed <strong>20 other users</strong> of the WhenToWork app. The survey included questions concerning their experiences while performing various actions on the site (checking the schedule, messaging other employees, trading shifts, etc.) and also questions about what changes they would like to see in the redesign.</p>
+				<br/>
+				<br/>
+				<div class="surveysection">
+					<div class="surveyQ , survey-left">
+						<h5>What is your primary reason for using the W2W app?</h5>
+						<img src="img/w2w/W2W Survey1.png" alt="Survey Question 1">
+					</div>
+					<div class="surveyQ , survey-right">
+						<h5>Which areas of the app would you like to see improvement?</h5>
+						<img src="img/w2w/W2W Survey2.png" alt="Survey Question 2">
+					</div>
+					<div class="surveyQ , survey-left">
+						<h5>How would you rate your overall experience on the W2W app?</h5>
+						<img src="img/w2w/W2W Survey3.png" alt="Survey Question 3">
+					</div>
+					<div class="surveyQ , survey-right">
+						<h5>Would you recommend the W2W app to a friend?</h5>
+						<img src="img/w2w/W2W Survey4.png" alt="Survey Question 4">
+					</div>
+					<h5>Do you have any additional comments about the W2W app or what you would like to see in the redesign?</h5>
+					<p><em>Response 1: "Didn't even know the app allowed me to message other staff!"<br/><br/>
+						Response 2: "Design feels out of date compared to other apps"<br/><br/>
+					Response 3: "Information is repeated across the app and is very unorganized"</em></p>
+				</div>
+			</div>
+			<br/>
+			<br/>
+			<br/>
+			<div id="step2">
+				<h5><em><strong>Step 2: Main Probems and Solutions</strong></em></h5><br/>
+				<div class="problems-text">
+					<h5>Lack of Hierarchy</h5>
+					<p>The current app is very bland and is visually outdated. Despite the development efficiency, the block-shaped buttons with the lack of hierarchy make the site dull and lacking user engagement. Creating a more modernized app design with visual hierarchy will help reinstate a “wow factor” for the app, in addition to creting a more intuitive user-flow.</p><br/>
+					<h5>Unclear Information</h5>
+					<p>The current app design contains duplicated information, just reformatted on a new page. The “upcoming” and “dashboard” pages both show the user’s upcoming shifts in a similar weekly calendar format, making the app difficult to navigate. There are also various methods of accessing the user’s schedule, all in different places on different pages, again increasing navigation difficulty. The app must not only be redesigned but the information must also be reorganized in a more user-friendly manner.</p><br/>
+					<h5>Messaging Difficulty</h5>
+					<p>The current app allows users to send messages, but the process of doing so forces a user to navigate to the “menu” page, then select “messages”, then click “new message”, and then finally compose a message. But even when they begin to write a message, they must know the recipient’s contact information prior to composing the message. This app redesign needs to ifacilitate the method of sending messages to employees and receiving messages from other employees, without having to go through a multi-step process. This will increase the overall efficiency of the app and better reveal one of the app’s currently ‘hidden’ features.</p>
+				</div>
+				<img class="original-app" src="img/w2w/w2wOriginal.png" alt="Original W2W Dashboard">
+			</div>
+			<br/>
+			<br/>
+			<br/>
+			<div id="step3">
+				<h5><em><strong>Step 3: Comparative Study</strong></em></h5><br/>
+				<div class="problems-text">
+					<h5>Lack of Hierarchy</h5>
+					<p>A modern design with buttons that have a clear sense of hierarchy with blue typefaces on a white button. The curved edges of the buttons create an updated look when compared to the block shaped buttons. Bottom icons are a more muted color in order to keep user attention focused on the page's content.</p><br/>
+					<h5>Unclear Information</h5>
+					<p>The different pages of the app all serve their own purpose and there is no duplicated information. The buttons on the “Home” page organize the basic duties of the app into their own section, making the different actions easily distinguishable by the user.</p><br/>
+					<h5>Messaging Difficulty</h5>
+					<p>There is a specific “Messages” button on the home page where all actions related to messaging can be found. When on other pages, there is a small mail logo at the top of the app that redirects the user to the same “Messages” page. When searching for people to send a message to, their account automatically populates when you type their name. Sending a message can be done entirely on a single page, increasing the user-friendly aspects of the site.</p>
+				</div>
+				<img class="original-app" src="img/w2w/Dayforce.png" alt="Dayforce Homepage">
+			</div>
+			<br/>
+			<br/>
+			<br/>
+			<div id="step4">
+				<h5><em><strong>Step 4: Redesign Client Restrictions</strong></em></h5>
+				<p>Must maintain the same color palette and logo as the current WhenToWork mobile app.<br/><br/>All of the information and pages presented on the current app must remain, however sections may be moved or reorganized to redefine the structure of the app.<br/><br/>The messaging system is only operable within the WhenToWork app. Staff phone numbers and emails are available to access, however the in-app messaging only allows the user to send/receive messages through the WhenToWork app.</p>
+			</div>
+			<br/>
+			<br/>
+			<br/>
 		</div>
+
+		<div id="step5">
+			<div class="content , project , center">
+				<h5><em><strong>Step 5: Ideation</strong></em></h5>
+				<img src="img/w2w/w2wInfoArch.png" alt="Information Architecture Diagram">
+			</div>
+		</div>
+		<br/>
+		<br/>
+		<br/>
+		<div class="content , project">
+			<div class="step6">
+				<h5><em><strong>Step 6: Wireframe, Prototype, and Test</strong></em></h5>
+				<h5>Initial Wireframe Sketches</h5>
+				<div class="center">
+					<img id="sketch" src="img/w2w/w2wSketchWireframe.png" alt="Wireframe Sketch">
+				</div>
+				<h5>Mid-Fidelity Wireframes</h5>
+				<div class="designs">
+					<div class="designslide">
+						<h5>Menu Page</h5>
+						<img src="img/w2w/MidFelMenu.png" alt="Slide 1">
+					</div>
+					<div class="designslide">
+						<h5>Specific Date Page</h5>
+						<img src="img/w2w/MidFelMessages.png" alt="Slide 2">
+					</div>
+					<div class="designslide">
+						<h5>Dashboard Page</h5>
+						<img src="img/w2w/MidFelDashboard.png" alt="Slide 3">
+					</div>
+					<div class="designslide">
+						<h5>Staff Page</h5>
+						<img src="img/w2w/MidFelStaff.png" alt="Slide 4">
+					</div>
+					<div class="designslide">
+						<h5>Account Page</h5>
+						<img src="img/w2w/MidFelAccount.png" alt="Slide 5">
+					</div>
+				</div>
+			</div>
+			<br/>
+			<br/>
+			<br/>
+			<h2 class="sectionhead">Final Design</h2>
+			<br/>
+			<h5><em><strong>Design Board</strong></em></h5>
+			<div class="center">
+				<img id="design-board" src="img/w2w/w2wFontBoard.png" alt="Final Design Board">
+			</div>
+			<h5><em><strong>Mobile App Design</strong></em></h5>
+			<div class="designs">
+				<div class="designslide">
+					<h5>Menu Page</h5>
+					<img src="img/w2w/w2wMenu.png" alt="Slide 1">
+				</div>
+				<div class="designslide">
+					<h5>Specific Date Page</h5>
+					<img src="img/w2w/w2wMessages.png" alt="Slide 2">
+				</div>
+				<div class="designslide">
+					<h5>Dashboard Page</h5>
+					<img src="img/w2w/w2wDashboard.png" alt="Slide 3">
+				</div>
+				<div class="designslide">
+					<h5>Staff Page</h5>
+					<img src="img/w2w/w2wStaff.png" alt="Slide 4">
+				</div>
+				<div class="designslide">
+					<h5>Account Page</h5>
+					<img src="img/w2w/w2wAccount.png" alt="Slide 5">
+				</div>
+			</div>
+			<br/>
+			<br/>
+			<br/>
+			<h5><em><strong>Solutions</strong></em></h5><br/>
+			<h5>Hierarchy Based Design</h5>
+			<p>This redesign now more closely relates visually to WhenToWork's competitors through the curved button edges and updated icons. These icons are not only more relevant to the time but are also more intuitive to what actions they provide. Additionally, the new typeface provides a sleek, modern look to the app's redesign, while also providing hierarchy to the different aspects of the app. All together these changes work to facilitate the different actions made by the user.</p><br/>
+			<h5>Information Clarity</h5>
+			<p>The redesigned app has been reorganized so that there are no longer duplicates of information available to the user. Each page has its own subpages that provide specific tasks relevant to the parent page (ex. staff page includes actions to message and interact with staff), making the application easier to navigate for the user and more intuitive.</p><br/>
+			<h5>Effortless Messaging</h5>
+			<p>Messaging on the app redesign is now done all in a single place. Within the staff page there is a list of employees with their contact info and a message icon that allows the user to send a direct message without having to first search for an employer's contact, making in-app messaging much less complex. New messages continue to appear on the user's dashboard, now with the ability to respond or trash the message without having to navigate to an entirely new page.</p>
+			<br/>
+			<br/>
+			<br/>
+			<h2 class="sectionhead">Reflection</h2>
+			<br/>
+			<h5><em><strong>Takeaways</strong></em></h5><br/>
+			<p>Overall, I really enjoyed spending some time analyzing an app that I have had a close relation to over the course of four or so years. I was able to identify the problems that frequently frustrated myself and many other staff members while using the WhenToWork app and use my creativity to develop solutions. I hope to have the opportunity to work on more app redesigns that I am familiar with in the future.</p><br/>
+			<h5><em><strong>Future Improvements</strong></em></h5><br/>
+			<p>If I were to have more time with this redesign, I would like to develop additional pages like a “Sign in or Create an Account” page and a “Loading” page when the app needs time to process data. If I had the opportunity, I would also like to work with an API or back-end data software to allow the messages in the WhenToWork app to also be sent directly to a user’s personal cell phone number or email.</p>
+		</div>
+		<!--W2W PROJECT CONTENT END-->
 		
 
 

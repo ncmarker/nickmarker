@@ -26,19 +26,20 @@
 		<link rel="stylesheet" href="style.css">
 
 		<!--JQUERY FOR RESPONSIVE NAVBAR-->
-		<script src="/path/to/cdn/jquery.slim.min.js"></script>
-
-		<!--JQUERY FOR WORD FLIPPER IN HEADER-->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script> 
-
-		<!--JQUERY TO ALLOW MULTIPLE SOURCES-->
-		<script>var jq16 = jQuery.noConflict(true);</script>
+		<!-- <script src="/path/to/cdn/jquery.slim.min.js"></script> -->
 
 		<title>Nick Marker Design--Projects</title>
 
 		<style>
 			#changeText {
 				display: inline-block;
+				opacity: 1;
+			  	transition: opacity .4s ease;
+			}
+
+			#changeText.fadeOut {
+			  opacity: 0;
+			  transition: opacity .4s ease;
 			}
 		</style>
 	</head>
@@ -128,43 +129,43 @@
 				<h3>Programming</h3>
 				<br>
 				<div class="card">
-					<div class="thumbnail"><img src="img/thumbnails/hexatron2.png" alt="3DAPARTMENT Logo"></div>
-					<h4>Hexatron━The Future of Living</h4>
-					<p>Visual descriptions of the company's primary design components, including fonts, color schemes, and mood boards, to establish a consistent media image for the company across multiple platforms.</p>
-					<a href="comingsoon.html"><div class="seeproject"><p>See Project -></p></div></a>
+					<div class="thumbnail"><img src="img/thumbnails/Blackjack.jpg" alt="Blackjack Game Logo"></div>
+					<h4>Blackjack━Can you beat the dealer?</h4>
+					<p>Modified version of the traditional Blackjack Casino game. Makes use of React, JavaScript, HTML, CSS, and jQuery, in addition to API manipulation. Check out the project to play.</p>
+					<a href="https://stackblitz.com/edit/react-rvfhqs?embed=1&file=src/index.js&view=preview" target=_blank><div class="seeproject"><p>See Project -></p></div></a>
 				</div>
 				<div class="card">
-					<div class="thumbnail"><img src="img/thumbnails/alleyway.png" alt="Alleyway Project"></div>
-					<h4>Paintball World Championship</h4>
-					<p>Abstract architectural design within the constraints of a narrow Downtown, LA alleyway. Geometric analysis of common spaces to create inhabitable forms through a programtic narrative.</p>
-					<a href="comingsoon.html"><div class="seeproject"><p>See Project -></p></div></a>
+					<div class="thumbnail"><img src="img/thumbnails/UserPrediction.jpg" alt="User Prediction Project"></div>
+					<h4>User Analysis Based on Web Inquiries</h4>
+					<p>After the user provides a set of mock Google searches, the program will produce a demographic prediction of the user. Usage of keywords and various datasets as an intro to AI programming.</p>
+					<a href="https://gist.github.com/ncmarker/cfddea9d71f5d8345cbdfc5b81a058d7" target=_blank><div class="seeproject"><p>See Project -></p></div></a>
 				</div>
-				<div class="card">
+				<div class="card" id="comingsoon">
 					<div class="thumbnail"><img src="img/thumbnails/curtainhouse.png" alt="Curtain House Project"></div>
-					<h4>The Curvy Curtain House</h4>
+					<h4>This project is coming soon</h4>
 					<p>Residential home design with a unique application of public and private space. Restrained within a rectangular site, the need for landscape design resulted in a blur between indoor and outdoor space.</p>
-					<a href="comingsoon.html"><div class="seeproject"><p>See Project -></p></div></a>
+					<a href="comingsoon.html"><div class="seeproject"><p>Not Available</p></div></a>
 				</div>
 
 				<h3>Architecture</h3>
 				<br>
 				<div class="card">
+					<div class="thumbnail"><img src="img/thumbnails/LA28.jpg" alt="LA28 Olympics Project"></div>
+					<h4>LA28 Olympic Media Branch</h4>
+					<p>Architectural design of a concession stand and media hub/library with a focus on the upcoming LA28 Olympic Games. Focus on structural design theory and material use.</p>
+					<a href="https://drive.google.com/file/d/1kOB0Tnt570dYPf64EAFaJ-47ixvnYyRs/view?usp=sharing" target="_blank"><div class="seeproject"><p>See Project -></p></div></a>
+				</div>
+				<div class="card">
 					<div class="thumbnail"><img src="img/thumbnails/hexatron2.png" alt="3DAPARTMENT Logo"></div>
 					<h4>Hexatron━The Future of Living</h4>
 					<p>Visual descriptions of the company's primary design components, including fonts, color schemes, and mood boards, to establish a consistent media image for the company across multiple platforms.</p>
-					<a href="comingsoon.html"><div class="seeproject"><p>See Project -></p></div></a>
+					<a href="https://drive.google.com/file/d/1UD-yVSp4qaxgE-QcjBX86YJt7AbnVf9O/view?usp=sharing" target="_blank"><div class="seeproject"><p>See Project -></p></div></a>
 				</div>
 				<div class="card">
 					<div class="thumbnail"><img src="img/thumbnails/alleyway.png" alt="Alleyway Project"></div>
 					<h4>Paintball World Championship</h4>
 					<p>Abstract architectural design within the constraints of a narrow Downtown, LA alleyway. Geometric analysis of common spaces to create inhabitable forms through a programtic narrative.</p>
-					<a href="comingsoon.html"><div class="seeproject"><p>See Project -></p></div></a>
-				</div>
-				<div class="card">
-					<div class="thumbnail"><img src="img/thumbnails/curtainhouse.png" alt="Curtain House Project"></div>
-					<h4>The Curvy Curtain House</h4>
-					<p>Residential home design with a unique application of public and private space. Restrained within a rectangular site, the need for landscape design resulted in a blur between indoor and outdoor space.</p>
-					<a href="comingsoon.html"><div class="seeproject"><p>See Project -></p></div></a>
+					<a href="https://drive.google.com/file/d/1q0BmD30Gfsk0ib89hHtz6pxugwv3sA2j/view?usp=sharing" target="_blank"><div class="seeproject"><p>See Project -></p></div></a>
 				</div>
 
 				<h3>Graphic Design</h3>
@@ -181,11 +182,11 @@
 					<p>A collage of my work done while serving as an intern with Amata Marketing Agency. Graphics and wireframes were created for over three different client companies and were posted across various social platforms.</p>
 					<a href="comingsoon.html"><div class="seeproject"><p>See Project -></p></div></a>
 				</div>
-				<div class="card">
+				<div class="card" id="comingsoon">
 					<div class="thumbnail"><img src="img/thumbnails/ritas.png" alt="Ritas Italian Ice Thumbnail"></div>
-					<h4>Rita's Italian Ice Site Redesign</h4>
+					<h4>This project is coming soon</h4>
 					<p>A sleek redesign focusing on responsiveness across devices of differing screen sizes. A newly modernized landing page that maintains the color palette and essential features of the original site.</p>
-					<a href="comingsoon.html"><div class="seeproject"><p>See Project -></p></div></a>
+					<a href="comingsoon.html"><div class="seeproject"><p>Not Available</p></div></a>
 				</div>
 			</div>
 		</div>
@@ -226,25 +227,40 @@
 		  nav.classList.toggle("show");
 		});
 
-		$("#js-hamburger").click(function () {
-		$("#js-top-line").toggleClass("active");
-		$("#js-center-line").toggleClass("active");
-		$("#js-bottom-line").toggleClass("active");
-		$("#js-nav").toggleClass("show");
-		});
-
+		// $("#js-hamburger").click(function () {
+		// $("#js-top-line").toggleClass("active");
+		// $("#js-center-line").toggleClass("active");
+		// $("#js-bottom-line").toggleClass("active");
+		// $("#js-nav").toggleClass("show");
+		// });
 
 		/*--WORD FLIPPER IN HEADER--*/
-		$(function () { 
-		  count = 0; 
-		  wordsArray = ["designer", "developer", "programmer, intern"]; 
-		  setInterval(function () { 
-		    count++; 
-		    $("#changeText").fadeOut(1500, function () { 
-		      $(this).text(wordsArray[count % wordsArray.length]).fadeIn(1500); 
-		    }); 
-		  }, 2000); 
-		}); 
+		window.onload = function () {
+
+		  'use strict';
+
+		  var words = [
+		    'designer',
+		    'developer',
+		    'programmer',
+		    'intern'
+		  ], 
+		      i = 0,
+		      wordChanger = document.querySelector('#changeText');
+
+		  setInterval(function () {
+		    wordChanger.classList.add('fadeOut');
+
+		    // timeout equal to transition duration
+		    setTimeout(function () {
+		      wordChanger.textContent = words[ (i === words.length - 1) ? i = 0 : i += 1];
+		      wordChanger.classList.remove('fadeOut');
+		    }, 400);
+
+		  }, 3000);
+		};
+
+
 	</script>
 
 	</body>
