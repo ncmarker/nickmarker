@@ -641,6 +641,20 @@ hr {
 	box-shadow: 1px 1px 10px lightgrey;
 }
 
+.designslide-r {
+	width: 23%;
+	margin: 10px 5px;
+	text-align: center;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.designslide-r img {
+	width: 100%;
+	border-radius: 15px;
+	box-shadow: 1px 1px 10px lightgrey;
+}
+
 .newhead {
 	margin: 50px 0px;
 	visibility: hidden;
@@ -688,6 +702,31 @@ hr {
 }
 
 .original-app img {
+	width: 100%;
+}
+
+.problems-text-r {
+	width: 100%;
+	display: block;
+}
+
+.dq-site {
+	width: 75%;
+	display: inline-block;
+	margin-right: 20px;
+	vertical-align: top;
+	border: 1px solid lightgrey;
+}
+
+.dq-app {
+	width: 21%;
+	display: inline-block;
+	margin: 0px;
+	vertical-align: top;
+	border: 1px solid lightgrey;
+}
+
+.dq-site img, .dq-app img{
 	width: 100%;
 }
 
@@ -902,6 +941,16 @@ hr {
 		height: auto;
 	}
 
+	.designslide-r {
+		width: 90%;
+		margin: 30px auto;
+	}
+
+	.designslide-r img {
+		width: 75%;
+		height: auto;
+	}
+
 	.surveyQ {
 		display: block;
 		vertical-align: top;
@@ -915,7 +964,7 @@ hr {
 		margin: 0 auto;
 	}
 
-	.original-app {
+	.original-app, .dq-site, .dq-app {
 		width: 75%;
 		display: block;
 		margin: 65px auto;

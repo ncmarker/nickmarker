@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="description" content="Innovative student designer with a vision to create the next immersive interface at the intersection of contemporary technology and digital marketing.">
+	  	<meta name="keywords" content="Nick Marker, Design, UI/UX, USC">
+	  	<meta name="author" content="Nick Marker">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!--GOOGLE FONTS-->
+		<link rel="preconnect" href="https://fonts.googleapis.com"> 
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+		<link href="https://fonts.googleapis.com/css2?family=Fira+Mono&display=swap" rel="stylesheet">
+
+		<!--INTER FONT-->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+
+		<!--PERMANENT MARKER FONT-->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+
+		<!--CSS STYLESHEET-->
+		<link rel="stylesheet" href="style.css">
+
+		<!--JQUERY FOR RESPONSIVE NAVBAR-->
+		<script src="/path/to/cdn/jquery.slim.min.js"></script>
+
+		<title>Nick Marker Design--Ritas</title>
+
+		<style>
+			#changeText {
+				display: inline-block;
+			}
+
+			/*--ACCORDION STYLE--*/
+			.accordion {
+				width: 100%;
+			}
+
+			.accordion .contentBx {
+				position: relative;
+				margin: 10px 20px;
+			}
+
+			.accordion .contentBx .label {
+				font-family: 'Inter', arial, sans-serif;
+				ffont-style: italic;
+				font-weight: 600;
+				font-size: 20px;
+				position: relative;
+				padding: 15px;
+				background-color: #252525;
+				color: #FFF;
+				cursor: pointer;
+			}
+
+			.accordion .contentBx .label:hover {
+				background-color: #474747;
+			}
+
+			.accordion .contentBx .label::before {
+				content: "+";
+				position: absolute;
+				top: 50%;
+				right: 20px;
+				transform: translateY(-50%);
+				font-size: 20px;
+			}
+
+			.accordion .contentBx.active .label::before {
+				content: "-";
+			}
+
+			.accordion .contentBx .acc-content {
+				position: relative;
+				background-color: #FFF;
+				height: 0;
+				overflow: hidden;
+				transition: 0.5s;
+				overflow-y: auto;
+			}
+
+			.accordion .contentBx.active .acc-content {
+				height: auto;
+				padding: 20px 0px;
+			}
+
+		</style>
+	</head>
+	<body>
+		<!--NAVBAR START-->
+		<div class="nav">
+			<div class="nav-container">
+				<img src="img/NMDesignLogo.png" alt="NMDesign Logo">
+				<a class="active" href="projects.html">Projects</a>
+				<a href="about.html">About</a>
+				<a href="resume.html">Resume</a>
+				<div class='clear'></div>
+			</div>
+		</div>
+		<!--NAVBAR END-->
+
+		<!--RESPONSIVE NAVBAR START-->
+		<div class='responsive-navigation'>
+			<header class="res-nav">
+			  <img src="img/NMDesignLogo.png" alt="NMDesign Logo">
+			  <!-- Side Nav -->
+			  <div id="js-nav" class="side-nav">
+			    <ul class="list">
+			      <li><a class="active" href="projects.html">Projects</a></li>
+			      <li><a href="about.html">About</a></li>
+			      <li><a href="resume.html">Resume</a></li>
+			    </ul>
+			  </div>
+			  <!-- Hamburger Button -->
+			  <div id="js-hamburger" class="hamburger button">
+			    <span id="js-top-line" class="top-line"></span>
+			    <span id="js-center-line" class="center-line"></span>
+			    <span id="js-bottom-line" class="bottom-line"></span>
+			  </div>
+			  <div class='clear'></div>
+			</header>
+		</div>
+		<!--RESPONSIVE NAVBAR END-->
+
+
+		<!--RITAS PROJECT HEADER START-->
+		<div class="pheader">
+			<div class="pimgmobile"><img src="img/ritas/RitasProject.png" alt="Ritas Mockup"></div>
+			<div class="pheadtext">
+				<h1>Rita's Italian Ice Site Redesign</h1>
+				<br>
+				<h6>A sleek redesign focusing on responsiveness across various devices of differing screen sizes. A newly modernized landing page that maintains the color palette and essential features of the original site.</h6>
+				<br>
+
+				<div class="infobox"><h5>Duration</h5><p>1 week, July 2022</p></div>
+				<div class="infobox"><h5>Role</h5><p>UI/UX Designer</p></div>
+				<div class="infobox"><h5>Tools</h5><p>Figma, Adobe Illustrator, Adobe Photoshop</p></div>
+			</div>
+			<div class="pimg"><img src="img/ritas/RitasProject.png" alt="Ritas Mockup"></div>
+		</div>
+		<!--W2W PROJECT HEADER END-->
+
+		<!--W2W PROJECT CONTENT START-->
+		<div class="content , project"> 
+			<h2 class="sectionhead">Introduction</h2>
+			<br/>
+			<p>Rita’s Italian ice is a restaurant chain based out of Pennsylvania that sells Italian ice, frozen custard, and other sweet treats. For this personal project I used my personal experience with the site along with surveyed user input to identify the primary problems within the current site to redesign a more user-friendly, responsive page.</p>
+			<hr class="newhead">
+
+			<h2 class="sectionhead">Final Redesign</h2>
+			<div class="designs">
+				<div class="designslide-r">
+					<h5>Loading Page</h5>
+					<p>Initial loading screen prior to entering the site</p>
+					<img src="img/ritas/LoadingPage.png" alt="Slide 1">
+				</div>
+				<div class="designslide-r">
+					<h5>Home Page</h5>
+					<p>Contains primary information and a call to action</p>
+					<img src="img/ritas/HomePage.png" alt="Slide 2">
+				</div>
+				<div class="designslide-r">
+					<h5>Forms Page</h5>
+					<p>Form layout for catering, fundraising, events, etc.</p>
+					<img src="img/ritas/Forms.png" alt="Slide 3">
+				</div>
+				<div class="designslide-r">
+					<h5>Information Page</h5>
+					<p>Contains secondary information after the home page</p>
+					<img src="img/ritas/SpecialEvents.png" alt="Slide 4">
+				</div>
+			</div>
+			<hr class="newhead"/>
+
+			<h2 class="sectionhead">Design Process</h2>
+			<br/>
+
+
+			<!-----ACCORDION START----->
+			<div class="accordion">
+
+				<div class="contentBx">
+					<div class="label"><em>Step 1: Research</em></div>
+					<div class="acc-content">
+						<div id="step1">
+							<!--<h5><em><strong>Step 1: Research</strong></em></h5>-->
+							<h5>Summary</h5>
+							<p>In addition to my personal experience with the website while working at my local Rita’s for four years, I also surveyed <strong>20 other users</strong> of the Rita’s of Oxford webpage. The survey included questions concerning their experiences while performing various actions on the site (ordering, checking the menu, calling the store, etc.) and also questions about what changes they would like to see in the redesign.</p>
+							<br/>
+							<br/>
+							<div class="surveysection">
+								<div class="surveyQ , survey-left">
+									<h5>What is your primary reason for using the Rita's webpage?</h5>
+									<img src="img/ritas/Q1Survey.png" alt="Survey Question 1">
+								</div>
+								<div class="surveyQ , survey-right">
+									<h5>Which areas of the site would you like to see improvement?</h5>
+									<img src="img/ritas/Q2Survey.png" alt="Survey Question 2">
+								</div>
+								<div class="surveyQ , survey-left">
+									<h5>How would you rate your overall experience on the Rita's site?</h5>
+									<img src="img/ritas/Q3Survey.png" alt="Survey Question 3">
+								</div>
+								<div class="surveyQ , survey-right">
+									<h5>Would you recommend the Rita's site to a friend?</h5>
+									<img src="img/ritas/Q4Survey.png" alt="Survey Question 4">
+								</div>
+								<h5>Do you have any additional comments about the Rita's webpage or what you would like to see in the redesign?</h5>
+								<p><em>Response 1: "Very hard to read on an iPhone"<br/><br/>
+									Response 2: "Could not tell if this was still the updated page"<br/><br/>
+								Response 3: "No place to order on the webpage"</em></p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="contentBx">
+					<div class="label"><em>Step 2: Main Problems and Solutions</em></div>
+					<div class="acc-content">
+						<div id="step2">
+							<!--<h5><em><strong>Step 2: Main Probems and Solutions</strong></em></h5><br/>-->
+							<div class="problems-text">
+								<h5>No Responsiveness</h5>
+								<p>Current site is not responsive across screens and rather shrinks the entire page to fit the width of the screen. Redesigning a responsive site will help make the site visually appealing and user friendly across all screen sizes, ultimately increasing user satisfaction.</p><br/>
+								<h5>Lack of a Call to Action</h5>
+								<p>The current site has no “order now” button/page, which is the main goal of the Rita’s Italian ice company. Adding such an aspect would work to help increase sales and promote a direction of the user-flow.</p><br/>
+								<h5>Unclear Information</h5>
+								<p>The current site has text far too small for the human eye to easily skim across and there are multiple unnecessary advertisements that duplicate previously stated information. Making the text larger and reducing the number of advertisements will help increase readability of the site and hence create a better user experience.</p>
+							</div>
+							<img class="original-app" src="img/ritas/RitasOriginalSite.png" alt="Original Ritas Site">
+						</div>
+					</div>
+				</div>
+
+
+
+				<div class="contentBx">
+					<div class="label"><em>Step 3: Comparative Study</em></div>
+					<div class="acc-content">
+						<div id="step3">
+							<!--<h5><em><strong>Step 3: Comparative Study</strong></em></h5><br/>-->
+							<img class="dq-site" src="img/ritas/DQDesktop.png" alt="Dairy Queen Homepage">
+							<img class="dq-app" src="img/ritas/DQPhone.png" alt="Dairy Queen Homepage Phone">
+							<div class="problems-text-r">
+								<h5>Responsiveness</h5>
+								<p>This site has clean designs for various screen sizes ranging from a laptop screen to a handheld phone screen. The layout of the page is not difficult to understand as the page responds to the screen size, and the font remains easily readable.</p><br/>
+								<h5>Call to Action</h5>
+								<p>This site has a clear “Start an Order” button on the home page which promotes sales and is an intuitive action for the user. The dark fill applied to this button on a light page successfully attracts the customers' attention to such action.</p><br/>
+								<h5>Clear Information</h5>
+								<p>The text on this site is large enough to read across all devices and headings are clearly larger/bolder to help direct the user across the page and attract attention to specific sections of the site. </p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+
+				<div class="contentBx">
+					<div class="label"><em>Step 4: Redesign Client Restrictions</em></div>
+					<div class="acc-content">
+						<div id="step4">
+							<!--<h5><em><strong>Step 4: Redesign Client Restrictions</strong></em></h5>-->
+							<p>Must maintain the same color palette and logo as the current Rita’s of Oxford webpage.<br/><br/>All pages on the current site must still be available in some way in the redesign. Pages can be nested within one another but still must be present.<br/><br/>Ordering directly through the site is not possible with how the store is currently operating solely based on Doordash and Uber Eats for delivery. Ordering can be done by taking the customer to a new link with the Doordash or Uber Eats menu.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="accordion">
+				<div class="contentBx">
+					<div class="label"><em>Step 5: Ideation</em></div>
+					<div class="acc-content">
+						<div id="step5">
+							<div class="content , project , center">
+								<!--<h5><em><strong>Step 5: Ideation</strong></em></h5>-->
+								<h5>Information Architecture</h5>
+								<img src="img/ritas/InfoArch.png" alt="Information Architecture Diagram">
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+
+				<div class="contentBx">
+					<div class="label"><em>Step 6: Wireframe, Prototype, and Test</em></div>
+					<div class="acc-content">
+						<div class="content , project">
+							<div class="step6">
+								<!--<h5><em><strong>Step 6: Wireframe, Prototype, and Test</strong></em></h5>-->
+								<h5>Initial Wireframe Sketches</h5>
+								<div class="center">
+									<img id="sketch" src="img/ritas/RitasSketch.png" alt="Wireframe Sketch">
+								</div>
+								<h5>Mid-Fidelity Wireframes</h5>
+								<div class="designs">
+									<div class="designslide-r">
+										<h5>Loading Page</h5>
+										<img src="img/ritas/LoadingPageWireframe.png" alt="Slide 1">
+									</div>
+									<div class="designslide-r">
+										<h5>Home Page</h5>
+										<img src="img/ritas/HomePageWireframe.png" alt="Slide 2">
+									</div>
+									<div class="designslide-r">
+										<h5>Forms Page</h5>
+										<img src="img/ritas/FormsWireframe.png" alt="Slide 3">
+									</div>
+									<div class="designslide-r">
+										<h5>Information Page</h5>
+										<img src="img/ritas/SpecialEventsWireframe.png" alt="Slide 4">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!------ACCORDION END----->
+
+			<br/>
+			<br/>
+			<br/>
+			<h2 class="sectionhead">Final Design</h2>
+			<br/>
+			<h5><em><strong>Design Board</strong></em></h5>
+			<div class="center">
+				<img id="design-board" src="img/ritas/FontBoard.png" alt="Final Design Board">
+			</div>
+
+			<!-----ACCORDION START AGAIN----->
+			<div class="accordion">
+				<div class="contentBx">
+					<div class="label"><em>Desktop Design</em></div>
+					<div class="acc-content">
+						<!--<h5><em><strong>Desktop Design</strong></em></h5>-->
+						<div class="designs">
+							<div class="designslide-r">
+								<h5>Loading Page</h5>
+								<img src="img/ritas/LoadingPage.png" alt="Slide 1">
+							</div>
+							<div class="designslide-r">
+								<h5>Home Page</h5>
+								<img src="img/ritas/HomePage.png" alt="Slide 2">
+							</div>
+							<div class="designslide-r">
+								<h5>Forms Page</h5>
+								<img src="img/ritas/Forms.png" alt="Slide 3">
+							</div>
+							<div class="designslide-r">
+								<h5>Information Page</h5>
+								<img src="img/ritas/SpecialEvents.png" alt="Slide 4">
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="contentBx">
+					<div class="label"><em>iPad Design</em></div>
+					<div class="acc-content">
+						<!--<h5><em><strong>iPad Design</strong></em></h5>-->
+						<div class="designs">
+							<div class="designslide-r">
+								<h5>Loading Page</h5>
+								<img src="img/ritas/iPadLoading.png" alt="Slide 1">
+							</div>
+							<div class="designslide-r">
+								<h5>Home Page</h5>
+								<img src="img/ritas/iPadHome.png" alt="Slide 2">
+							</div>
+							<div class="designslide-r">
+								<h5>Forms Page</h5>
+								<img src="img/ritas/iPadForms.png" alt="Slide 3">
+							</div>
+							<div class="designslide-r">
+								<h5>Information Page</h5>
+								<img src="img/ritas/iPadSpecialEvents.png" alt="Slide 4">
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="contentBx">
+					<div class="label"><em>iPhone Design</em></div>
+					<div class="acc-content">
+						<!--<h5><em><strong>iPhone Design</strong></em></h5>-->
+						<div class="designs">
+							<div class="designslide-r">
+								<h5>Loading Page</h5>
+								<img src="img/ritas/PhoneLoading.png" alt="Slide 1">
+							</div>
+							<div class="designslide-r">
+								<h5>Home Page</h5>
+								<img src="img/ritas/PhoneHomePage.png" alt="Slide 2">
+							</div>
+							<div class="designslide-r">
+								<h5>Forms Page</h5>
+								<img src="img/ritas/PhoneForms.png" alt="Slide 3">
+							</div>
+							<div class="designslide-r">
+								<h5>Information Page</h5>
+								<img src="img/ritas/PhoneSpecialEvents.png" alt="Slide 4">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-----ACCORDION END AGAIN----->
+
+			<br/>
+			<br/>
+			<br/>
+			<h5><em><strong>Solutions</strong></em></h5><br/>
+			<h5>New Responsive Design</h5>
+			<p>This redesign now allows the site to be better viewed across all screen sizes, ranging from desktops to handheld phones. The text no longer shrinks to fit the size of the screen, rather the information on the page is rearranged to accommodate for the change in screen size.</p><br/>
+			<h5>Apparent Call to Action</h5>
+			<p>The redesigned site now includes a clear call to action with a dark red fill on a light blue page, effectively attracting the human eye as soon as the customer opens the page. This call to action will now successfully work toward the ultimate goal of the company: to increase sales.</p><br/>
+			<h5>Clear Information</h5>
+			<p>The font used in the site redesign is much larger (24px-64px) as opposed to the original font that disrupted the flow of the page due to its small size. Headers are now clearly larger/bolded in the redesign to distinguish the different sections of a page. The unnecessary and repetitive advertisements on the original site were also removed in the redesign to create a sense of organization across the site.</p>
+			<br/>
+			<br/>
+			<br/>
+			<h2 class="sectionhead">Reflection</h2>
+			<br/>
+			<h5><em><strong>Takeaways</strong></em></h5><br/>
+			<p>Overall, I really enjoyed spending some time analyzing a site that I have had a close relationship with over the course of four or so years. I was able to identify the problems that frequently frustrated myself and many other local customers at Rita’s of Oxford, and use my creativity to develop solutions. I hope to have the opportunity to work on more site redesigns that I am familiar with in the future.</p><br/>
+			<h5><em><strong>Future Improvements</strong></em></h5><br/>
+			<p>If I were to have more time with this redesign, I would like to develop a method of ordering directly on the Rita’s of Oxford website. Due to the store’s current use of Door Dash and Uber Eats for delivery, the “Order Now” button is linked to the web-based Door Dash page where the user can then place their order. I would also have liked to create specific mock-ups for the “Fundraising” and “Birthday” pages, however the form on the “Catering” page is the same form that would be used (with minor changes) on the other two pages, so only one was created for the sake of time.</p>
+		</div>
+		<!--RITAS PROJECT CONTENT END-->
+		
+
+
+		<!--FOOTER ANIMATION START-->
+		<div class="footeranimation">
+			<div class="figure" id="f1"><img src="img/walkingman.gif" alt="Walking Stick Man"></div>
+			<div class="bubble"><p>Thanks for visiting!</p></div>
+		</div>
+		<!--FOOTER ANIMATION END-->
+
+		<!--FOOTER START-->
+		<div class="footer">
+			<p><a class="navfoot" href="projects.html">PROJECTS</a> | <a class="navfoot" href="about.html">ABOUT</a> | <a class="navfoot" href="resume.html">RESUME</a></p>
+			<a href="tel:484-365-3437"><img class="icon" src="img/Phone.png" alt="Call Me"></a>
+			<a href="mailto:ncmarker@usc.edu"><img class="icon" src="img/Mail.png" alt="Email Me"></a>
+			<a href="https://www.linkedin.com/in/nickmarker" target="_blank"><img class="icon" src="img/Linkedin.png" alt="Linkedin Profile"></a>
+			<br>
+			<img id="logo" src="img/NMDesignLogo.png" alt="Nick Marker Design Logo">
+			<p id="copyright">Designed and Developed by Nick Marker &copy; 2022</p>
+		</div>
+		<!--FOOTER END-->
+
+	<script>
+
+		/*--ACCORDION--*/
+		const accordion = document.getElementsByClassName('contentBx');
+
+		for (i = 0; i < accordion.length; i++){
+			accordion[i].addEventListener('click', function(){
+				this.classList.toggle('active')
+			})
+		}
+
+
+
+		/*--NAVBAR SLIDE IN/OUT--*/
+		const hamburgerBtn = document.getElementById("js-hamburger");
+		const topLine = document.getElementById("js-top-line");
+		const centerLine = document.getElementById("js-center-line");
+		const bottomLine = document.getElementById("js-bottom-line");
+		const nav = document.getElementById("js-nav");
+
+		hamburgerBtn.addEventListener("click", () => {
+		  topLine.classList.toggle("active");
+		  centerLine.classList.toggle("active");
+		  bottomLine.classList.toggle("active");
+		  nav.classList.toggle("show");
+		});
+
+		$("#js-hamburger").click(function () {
+		$("#js-top-line").toggleClass("active");
+		$("#js-center-line").toggleClass("active");
+		$("#js-bottom-line").toggleClass("active");
+		$("#js-nav").toggleClass("show");
+		});
+
+
+
+		
+
+	</script>
+
+	</body>
+</html>
