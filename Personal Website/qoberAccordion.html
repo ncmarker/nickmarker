@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="description" content="Innovative student designer with a vision to create the next immersive interface at the intersection of contemporary technology and digital marketing.">
+	  	<meta name="keywords" content="Nick Marker, Design, UI/UX, USC">
+	  	<meta name="author" content="Nick Marker">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!--GOOGLE FONTS-->
+		<link rel="preconnect" href="https://fonts.googleapis.com"> 
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+		<link href="https://fonts.googleapis.com/css2?family=Fira+Mono&display=swap" rel="stylesheet">
+
+		<!--INTER FONT-->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+
+		<!--PERMANENT MARKER FONT-->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+
+		<!--CSS STYLESHEET-->
+		<link rel="stylesheet" href="style.css">
+
+		<!--JQUERY FOR RESPONSIVE NAVBAR-->
+		<script src="/path/to/cdn/jquery.slim.min.js"></script>
+
+		<title>Nick Marker Design--Qober</title>
+
+		<style>
+			#changeText {
+				display: inline-block;
+			}
+
+			/*--ACCORDION STYLE--*/
+			.accordion {
+				width: 100%;
+			}
+
+			.accordion .contentBx {
+				position: relative;
+				margin: 10px 20px;
+			}
+
+			.accordion .contentBx .label {
+				font-family: 'Inter', arial, sans-serif;
+				ffont-style: italic;
+				font-weight: 600;
+				font-size: 20px;
+				position: relative;
+				padding: 15px;
+				background-color: #252525;
+				color: #FFF;
+				cursor: pointer;
+			}
+
+			.accordion .contentBx .label:hover {
+				background-color: #474747;
+			}
+
+			.accordion .contentBx .label::before {
+				content: "+";
+				position: absolute;
+				top: 50%;
+				right: 20px;
+				transform: translateY(-50%);
+				font-size: 20px;
+			}
+
+			.accordion .contentBx.active .label::before {
+				content: "-";
+			}
+
+			.accordion .contentBx .acc-content {
+				position: relative;
+				background-color: #FFF;
+				height: 0;
+				overflow: hidden;
+				transition: 0.5s;
+				overflow-y: auto;
+			}
+
+			.accordion .contentBx.active .acc-content {
+				height: auto;
+				padding: 20px 0px;
+			}
+
+		</style>
+	</head>
+	<body>
+		<!--NAVBAR START-->
+		<div class="nav">
+			<div class="nav-container">
+				<img src="img/NMDesignLogo.png" alt="NMDesign Logo">
+				<a class="active" href="projects.html">Projects</a>
+				<a href="about.html">About</a>
+				<a href="resume.html">Resume</a>
+				<div class='clear'></div>
+			</div>
+		</div>
+		<!--NAVBAR END-->
+
+		<!--RESPONSIVE NAVBAR START-->
+		<div class='responsive-navigation'>
+			<header class="res-nav">
+			  <img src="img/NMDesignLogo.png" alt="NMDesign Logo">
+			  <!-- Side Nav -->
+			  <div id="js-nav" class="side-nav">
+			    <ul class="list">
+			      <li><a class="active" href="projects.html">Projects</a></li>
+			      <li><a href="about.html">About</a></li>
+			      <li><a href="resume.html">Resume</a></li>
+			    </ul>
+			  </div>
+			  <!-- Hamburger Button -->
+			  <div id="js-hamburger" class="hamburger button">
+			    <span id="js-top-line" class="top-line"></span>
+			    <span id="js-center-line" class="center-line"></span>
+			    <span id="js-bottom-line" class="bottom-line"></span>
+			  </div>
+			  <div class='clear'></div>
+			</header>
+		</div>
+		<!--RESPONSIVE NAVBAR END-->
+
+
+		<!--QOBER PROJECT HEADER START-->
+		<div class="pheader">
+			<div class="pimgmobile"><img src="img/qober/Mockup.png" alt="When to Work Mockup Vertical"></div>
+			<div class="pheadtext">
+				<h1>Qober Branding and Site Design</h1>
+				<br>
+				<h6>A complete branding of a modern clothing company while working within specific client restraints. Includes logo creation and website design, with a marketing focus on the digital interests of generation Z.</h6>
+				<br>
+
+				<div class="infobox"><h5>Duration</h5><p>1 day, October 2022</p></div>
+				<div class="infobox"><h5>Role</h5><p>UI/UX Designer, Brand Designer</p></div>
+				<div class="infobox"><h5>Tools</h5><p>Figma, Adobe Illustrator, Adobe Photoshop</p></div>
+			</div>
+			<div class="pimg"><img src="img/qober/Mockup.png" alt="Qober Mockup"></div>
+		</div>
+		<!--QOBER PROJECT HEADER END-->
+
+		<!--QOBER PROJECT CONTENT START-->
+		<div class="content , project"> 
+			<h2 class="sectionhead">Introduction</h2>
+			<br/>
+			<p>This project was completed as part of a competition for a University of Southern California organization (LavaLab). The prompt was released in the evening, and due the following morning. The prompt for the webpage design is as follows:<br/><br/>
+			<em>Qober wants you to design the home page of their shopping website to show off images of their merchandise, display their store hours and location, and draw users in with their cohesive aesthetic. Design a mockup of ONLY THE HOME PAGE. You may choose to use any existing merchandise images (t-shirts, pants, totes, shoes, etc.). A great resource is https://unsplash.com/. Refer to "The Client" (below) for more information about their aesthetic rebrand.<br/><br/>
+			A clothing brand called "Qober" is trying to rebrand to be trendy and requested help from you! Their target audience is GenZ, and they show you a mood board of gradients, saturated colors, and interesting patterns (lines, checkers, etc.). They pride themselves in line art graphics of characters or interesting (but readable) typography.</em>
+			</p>
+			<hr class="newhead">
+
+			<h2 class="sectionhead">Final Redesign</h2>
+			<div class="designs">
+				<div class="qsketch">
+					<h5>Wireframe Sketch</h5>
+					<p>Basic organization of the home page and initial ideas</p>
+					<img src="img/qober/QoberSketch.png" alt="Slide 1">
+				</div>
+				<div class="designslide-q">
+					<h5>Mid-Fidelity Mockup</h5>
+					<p>Addition of specific headers and typeface hierarchy</p>
+					<img src="img/qober/MidFelDesktop.png" alt="Slide 2">
+				</div>
+				<div class="designslide-q">
+					<h5>Final Design</h5>
+					<p>Addition of color, icons, fonts, and other client requests</p>
+					<img src="img/qober/Desktop.png" alt="Slide 3">
+				</div>
+			</div>
+			<hr class="newhead"/>
+
+			<h2 class="sectionhead">Design Process</h2>
+			<br/>
+
+
+			<!-----ACCORDION START----->
+			<div class="accordion">
+
+				<div class="contentBx">
+					<div class="label"><em>Step 1: Brand Development</em></div>
+					<div class="acc-content">
+						<div id="step1">
+							<!--<h5><em><strong>Step 1: Brand Development</strong></em></h5>-->
+							<h5>Process</h5>
+							<p>After analyzing the prompt, I wanted to develop a brand logo that catered specifically to GenZ, Qober's target audience. I created various iterations of a brand identity, using modern typefaces with a contrast between a heavy and light font weight. This logo can also be simplified to only a "Q" for smaller scale branding, or to the full design for larger scales.</p>
+							<br/>
+							<br/>
+							<div class="designs">
+								<div class="qlogo">
+									<h5>Final Logo Design</h5>
+									<img src="img/qober/QoberLogo.png" alt="Qober Logo">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="contentBx">
+					<div class="label"><em>Step 2: Client Requests</em></div>
+					<div class="acc-content">
+						<div id="step2">
+							<!--<h5><em><strong>Step 2: Client Requests</strong></em></h5><br/>-->
+							<div id="step4">
+								<h5>Targeting GenZ</h5>
+								<p>The client has chosen GenZ as their target audience for their upcoming brand. Having such knowledge in mind, I want to create simple, eye catching interfaces that GenZ typically enjoys. Analyzing other popular GenZ clothing brands like Urban Outfitters, PacSun, and Lululemon will allow me to create a design similar to previously successful clothing brand sites among GenZ.</p><br/>
+								<h5>Gradients, Saturated Colors, and Patterns</h5>
+								<p>While iterating through various design concepts, I am sure to keep in mind that bright, saturated colors are a must. Working with colors in gradient form will also allow for a wider range of bright colors, wihtout appearing overly disorganized. Finally, ensuring some sort of pattern is a must, and I took the appraoch of incorporating the pattern in the background of the page body.</p><br/>
+								<h5>Line Art Characters</h5>
+								<p>After iterating between more cartoon based characters and more abstract characetrs, I decided on using abstract line art to create characters on the page. This decision was made to increase the elegancy of the page, as opposed to making it more playful by adding cartoons. The use of various bright colors had already created a playful atmosphere for the page, so a more elegant graphic was chosen.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			<!------ACCORDUION END----->
+
+
+				<br/>
+				<br/>
+				<br/>
+				<h2 class="sectionhead">Reflection</h2>
+				<br/>
+				<h5><em><strong>Takeaways</strong></em></h5><br/>
+				<p>Overall, I enjoyed experimenting with new techniques that I am not overly familiar with, such as bright, intense colors and patterns. I also appreciated the opportunity to create a design based on various client requests, with specific intentions for the design. Working in such a way allowed me to better accustom myself to the real world works of UX Design and how a unique interface can be formed through the interaction of client requests and designer ideas.</p><br/>
+				<h5><em><strong>Future Improvements</strong></em></h5><br/>
+				<p>If I were to have more time with this redesign, I would like to develop additional pages for the site in order to make it appear as a full comapny webpage. I would also like to experiment with my ability to create my own graphics for the comapny, that can be used in addition to the logo as a statement of the brand.</p>
+			</div>
+		</div>
+		<!--W2W PROJECT CONTENT END-->
+		
+
+
+		<!--FOOTER ANIMATION START-->
+		<div class="footeranimation">
+			<div class="figure" id="f1"><img src="img/walkingman.gif" alt="Walking Stick Man"></div>
+			<div class="bubble"><p>Thanks for visiting!</p></div>
+		</div>
+		<!--FOOTER ANIMATION END-->
+
+		<!--FOOTER START-->
+		<div class="footer">
+			<p><a class="navfoot" href="projects.html">PROJECTS</a> | <a class="navfoot" href="about.html">ABOUT</a> | <a class="navfoot" href="resume.html">RESUME</a></p>
+			<a href="tel:484-365-3437"><img class="icon" src="img/Phone.png" alt="Call Me"></a>
+			<a href="mailto:ncmarker@usc.edu"><img class="icon" src="img/Mail.png" alt="Email Me"></a>
+			<a href="https://www.linkedin.com/in/nickmarker" target="_blank"><img class="icon" src="img/Linkedin.png" alt="Linkedin Profile"></a>
+			<br>
+			<img id="logo" src="img/NMDesignLogo.png" alt="Nick Marker Design Logo">
+			<p id="copyright">Designed and Developed by Nick Marker &copy; 2022</p>
+		</div>
+		<!--FOOTER END-->
+
+	<script>
+
+		/*--ACCORDION--*/
+		const accordion = document.getElementsByClassName('contentBx');
+
+		for (i = 0; i < accordion.length; i++){
+			accordion[i].addEventListener('click', function(){
+				this.classList.toggle('active')
+			})
+		}
+
+
+
+		/*--NAVBAR SLIDE IN/OUT--*/
+		const hamburgerBtn = document.getElementById("js-hamburger");
+		const topLine = document.getElementById("js-top-line");
+		const centerLine = document.getElementById("js-center-line");
+		const bottomLine = document.getElementById("js-bottom-line");
+		const nav = document.getElementById("js-nav");
+
+		hamburgerBtn.addEventListener("click", () => {
+		  topLine.classList.toggle("active");
+		  centerLine.classList.toggle("active");
+		  bottomLine.classList.toggle("active");
+		  nav.classList.toggle("show");
+		});
+
+		$("#js-hamburger").click(function () {
+		$("#js-top-line").toggleClass("active");
+		$("#js-center-line").toggleClass("active");
+		$("#js-bottom-line").toggleClass("active");
+		$("#js-nav").toggleClass("show");
+		});
+
+
+
+		
+
+	</script>
+
+	</body>
+</html>

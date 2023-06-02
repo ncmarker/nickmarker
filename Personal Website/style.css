@@ -627,7 +627,7 @@ hr {
 	text-align: center;
 }
 
-.designslide {
+.designslide, .qsketch {
 	width: 18%;
 	margin: 10px 5px;
 	text-align: center;
@@ -635,10 +635,27 @@ hr {
 	vertical-align: top;
 }
 
-.designslide img {
+.qlogo {
+	width: 40%;
+	margin: 10px 5px 0px;
+	text-align: center;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.designslide img, .designslide-r img, .designslide-q img {
 	width: 100%;
 	border-radius: 15px;
 	box-shadow: 1px 1px 10px lightgrey;
+}
+
+.qsketch img {
+	width: 100%;
+}
+
+.qlogo img {
+	width: 100%;
+	margin-top: 30px;
 }
 
 .designslide-r {
@@ -649,11 +666,19 @@ hr {
 	vertical-align: top;
 }
 
-.designslide-r img {
+.designslide-q {
+	width: 30%;
+	margin: 10px 25px;
+	text-align: center;
+	display: inline-block;
+	vertical-align: top;
+}
+
+/*.designslide-r img {
 	width: 100%;
 	border-radius: 15px;
 	box-shadow: 1px 1px 10px lightgrey;
-}
+}*/
 
 .newhead {
 	margin: 50px 0px;
@@ -931,22 +956,12 @@ hr {
 
 
 	/*--SPECIFIC PROJECT CONTENT--*/
-	.designslide {
+	.designslide, .designslide-r, .designslide-q, .qsketch, .qlogo {
 		width: 90%;
 		margin: 30px auto;
 	}
 
-	.designslide img {
-		width: 75%;
-		height: auto;
-	}
-
-	.designslide-r {
-		width: 90%;
-		margin: 30px auto;
-	}
-
-	.designslide-r img {
+	.designslide img, .designslide-r img, .designslide-q img, .qsketch img, .qlogo img {
 		width: 75%;
 		height: auto;
 	}
