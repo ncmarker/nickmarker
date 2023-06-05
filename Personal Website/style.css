@@ -532,7 +532,11 @@ hr {
 
 
 /*-----SPECIFIC PROJECT HEADER-----*/
-.pimgmobile {
+.pimgmobile, .pimgmobile-3d {
+	display: none;
+}
+
+.pimgmobile-amata {
 	display: none;
 }
 
@@ -558,7 +562,14 @@ hr {
 	vertical-align: middle;
 }
 
-.pimg img {
+.pimg-3d {
+	display: inline-block;
+	width: 30%;
+	margin: 0px;
+	vertical-align: middle;
+}
+
+.pimg img, .pimg-3d img {
 	width: 100%;
 	height: auto;
 }
@@ -672,6 +683,25 @@ hr {
 	text-align: center;
 	display: inline-block;
 	vertical-align: top;
+}
+
+.designslide-3d {
+	width: 28%;
+	margin: 10px 25px;
+	text-align: center;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.designslide-3d img, .designslide-3d iframe {
+	margin-top: 15px;
+	width: 100%;
+	box-shadow: 1px 1px 10px lightgrey;
+	border: none;
+}
+
+.designslide-3d iframe {
+	height: 310px;
 }
 
 /*.designslide-r img {
@@ -791,6 +821,46 @@ hr {
 	border: 1px solid lightgrey;
 	box-shadow: 0px 0px 10px lightgrey;
 	margin: 50px 0px;
+}
+
+.moodboard {
+	width: 100%;
+	box-shadow: 0px 0px 10px lightgrey;
+	margin: 25px auto;
+}
+
+.moodboard img {
+	width: 100%;
+}
+
+.graph-text-3d {
+	width: 45%;
+	margin-right: 25px;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.graph-3d {
+	width: 50%;
+	display: inline-block;
+	vertical-align: top;
+	margin: 0px 0px;
+}
+
+.amata-graphics {
+	margin: 0px auto;
+	text-align: center;
+}
+
+.amata-graphics .graphic {
+	width: 21%;
+	margin: 20px;
+	display: inline-block;
+}
+
+.amata-graphics .graphic img {
+	width: 100%;
+	box-shadow: 0px 0px 10px lightgrey;
 }
 
 
@@ -920,17 +990,23 @@ hr {
 	}
 
 	/*--SPECIFIC PROJECTS HEADER--*/
-	.pimg {
+	.pimg, .pimg-3d {
 		display: none;
 	}
 
-	.pimgmobile {
+	.pimgmobile, .pimgmobile-3d {
 		display: block;
 		width: 75%;
 		margin: 0 auto;
 	}
 
-	.pimgmobile img {
+	.pimgmobile-amata {
+		display: block;
+		width: 45%;
+		margin: 0 auto;
+	}
+
+	.pimgmobile img, .pimgmobile-3d img, .pimgmobile-amata img {
 		width: 100%;
 	}
 
@@ -993,6 +1069,35 @@ hr {
 		width: 90%;
 	}
 
+	.moodboard {
+		width: 85%;
+		box-shadow: 0px 0px 10px lightgrey;
+		margin: 25px auto;
+	}
+
+	.graph-text-3d {
+		width: 100%;
+		margin-right: 0px;
+		display: block;
+	}
+
+	.graph-3d {
+		width: 90%;
+		display: block;
+		margin: 0px auto;
+	}
+
+	.designslide-3d {
+		width: 85%;
+		height: auto;
+		margin: 20px auto;
+	}
+
+	.amata-graphics .graphic {
+		width: 85%;
+		margin: 25px auto;
+		display: block;
+	}
 
 
 }
